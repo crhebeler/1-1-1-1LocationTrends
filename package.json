@@ -1,5 +1,5 @@
 {
-  "name": "MERN-boilerplate",
+  "name": "mern-boilerplate",
   "version": "1.0.0",
   "description": "MERN stack project boilerplate",
   "author": "Eugene Cheung",
@@ -45,5 +45,11 @@
     "webpack-hot-middleware": "^2.21.2",
     "webpack-merge": "^4.1.2",
     "whatwg-fetch": "^2.0.3"
-  }
+  },
+  "bugs": {
+    "url": "https://github.com/arkon/MERN-boilerplate/issues"
+  },
+  "homepage": "https://github.com/arkon/MERN-boilerplate#readme",
+  "main": "postcss.config.js",
+  "devDependencies": {}
 }
