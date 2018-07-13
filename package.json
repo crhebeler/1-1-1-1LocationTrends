@@ -10,6 +10,8 @@
   "license": "MIT",
   "private": true,
   "scripts": {
+    "client-install": "npm install --prefix client",
+    "client": "npm start --prefix client",
     "start": "webpack -p --progress --profile --colors && node server",
     "start:dev": "node server"
   },
@@ -37,6 +39,7 @@
     "react-hot-loader": "^4.0.0",
     "react-router": "^4.2.0",
     "react-router-dom": "^4.2.2",
+    "redux": "^4.0.0",
     "sass-loader": "^6.0.7",
     "style-loader": "^0.20.3",
     "webpack": "^4.2.0",
