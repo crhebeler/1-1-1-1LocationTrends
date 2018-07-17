@@ -1,22 +1,21 @@
 import React from 'react';
-import { Switch, Route } from 'react-router-dom'
+
 import { Link } from 'react-router-dom'
 import '../styles/Navbar.css';
 
 
-
-
-
-const Navlink = () => (
-  <main>
-    <Switch>
-      <Route exact path='/' component={Home}/>
-      <Route path='/Charts' component={Charts}/>
-      <Route path='/Zillow' component={Zillow}/>
-      <Route path='/Team' component={Team}/>
-    </Switch>
-  </main>
+const NavLink = () => (
+  <header className="nav">
+    <nav>
+      <ul>
+      <Link to='/'>Home</Link>
+        <Link to='/Charts'>Charts</Link>
+        <Link to='/Zillow'>Zillow</Link>
+        <Link to='/Team'>Meet the Team</Link>
+      </ul>
+    </nav>
+  </header>
 )
 
-export default Navbar
-     
+
+export default NavLink

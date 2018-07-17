@@ -2,7 +2,7 @@ import React from 'react';
 
 
 
-const DataResults = (props) => {
+const Team = (props) => {
   return (
     <div>
  <h1> Team </h1> 

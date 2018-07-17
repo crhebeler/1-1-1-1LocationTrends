@@ -6,5 +6,6 @@ import App from './App';
 render((
   <BrowserRouter>
     <Route exact path="/" component={App}/>
+  
   </BrowserRouter>
 ), document.getElementById('root'));
