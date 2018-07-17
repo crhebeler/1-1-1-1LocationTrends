@@ -1,11 +1,18 @@
 import React from 'react';
+import NavLink from './Navlink';
+import Footer from './Footer';
+import ChartsHeader from './ChartsHeader'; 
 
 
 
 const Charts = (props) => {
   return (
     <div>
- <h1> Hello </h1> 
+      <NavLink /> 
+      <ChartsHeader /> 
+ <h1> Charts is Working </h1> 
+
+ <Footer /> 
     </div>
   );
 };

@@ -1,8 +1,9 @@
 import React from 'react';
-import Header from "./Header";
+import Header from './Header';
 import Center from "./Center";
 import Footer from "./Footer";
 import DataResults from "./DataResults";
+import NavLink from './Navlink';
 
 
 
@@ -12,7 +13,7 @@ const Home = (props) => {
 
 
 
-        
+        < NavLink /> 
       <Header /> 
 <Center />
 <DataResults /> 

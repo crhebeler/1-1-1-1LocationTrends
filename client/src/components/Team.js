@@ -1,11 +1,18 @@
 import React from 'react';
+import NavLink from './Navlink';
+import Footer from './Footer'; 
+import TeamHeader from './Header'; 
+
 
 
 
 const Team = (props) => {
   return (
     <div>
- <h1> Team </h1> 
+         <NavLink /> 
+         <TeamHeader /> 
+ <h1> Team is working</h1> 
+ <Footer /> 
     </div>
   );
 };

@@ -9,7 +9,7 @@ import '../styles/Header.css';
 
 
 
-const Center = (props) => {
+const ChartsHeader = (props) => {
   return (
     <div>
       <Jumbotron fluid>
@@ -33,4 +33,4 @@ const Center = (props) => {
   );
 };
 
-export default Center;
+export default ChartsHeader;

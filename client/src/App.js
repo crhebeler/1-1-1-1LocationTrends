@@ -7,6 +7,7 @@ import Center from "./components/Center";
 import Footer from "./components/Footer";
 import DataResults from "./components/DataResults";
 import Home from "./components/Home";
+import Zillow from "./components/Zillow"; 
 
 class App extends Component {
    render() {
