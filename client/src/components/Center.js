@@ -1,6 +1,6 @@
 import React from "react";
 import { Container, Row, Col } from 'reactstrap';
-
+import parentDropdown from './parentDropdown'; 
 import '../styles/Center.css';
 
 
@@ -26,7 +26,12 @@ const map = {
       
         <Row>
 
-          <Col><h2> Death's By Location</h2></Col>
+          <Col><h2> Death's By Location</h2>
+          <parentDropdown /> 
+          
+          </Col>
+ 
+
 
           <Col><h2> Birth's by Location </h2> </Col>
 
