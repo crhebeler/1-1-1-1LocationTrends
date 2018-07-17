@@ -1,4 +1,16 @@
-[
+const mongoose = require("mongoose");
+const db = require("../models");
+
+// This file empties the PopulationProjection collection and inserts the  data below
+
+mongoose.connect(
+  process.env.MONGODB_URI ||
+  "mongodb://localhost/reactbirthlist"
+);
+
+
+const PopulationProjectionSeed = [
+  
   {
     "2008": "244,664",
     "2009": "246,489",
@@ -1242,3 +1254,15 @@
     "2022 (projected population growth": ""
   }
 ]
+
+db.PopulationProjection
+  .remove({})
+  .then(() => db.PopulationProjection.collection.insertMany(PopulationProjectionSeed))
+  .then(data => {
+    console.log(data.result.n + " records inserted!");
+    process.exit(0);
+  })
+  .catch(err => {
+    console.error(err);
+    process.exit(1);
+  });

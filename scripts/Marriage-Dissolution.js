@@ -1,4 +1,16 @@
-[
+const mongoose = require("mongoose");
+const db = require("../models");
+
+// This file empties the Divorce collection and inserts the  data below
+
+mongoose.connect(
+  process.env.MONGODB_URI ||
+  "mongodb://localhost/reactbirthlist"
+);
+
+
+const DivorceSeed = [
+
   {
     "2008": 858,
     "2009": 804,
@@ -1035,3 +1047,15 @@
     "": ""
   }
 ]
+
+db.Divorce
+  .remove({})
+  .then(() => db.Divorce.collection.insertMany(DivorceSeed))
+  .then(data => {
+    console.log(data.result.n + " records inserted!");
+    process.exit(0);
+  })
+  .catch(err => {
+    console.error(err);
+    process.exit(1);
+  });

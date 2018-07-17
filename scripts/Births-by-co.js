@@ -1,4 +1,15 @@
-[
+const mongoose = require("mongoose");
+const db = require("../models");
+
+// This file empties the Birth collection and inserts the birth data below
+
+mongoose.connect(
+  process.env.MONGODB_URI ||
+  "mongodb://localhost/reactbirthlist"
+);
+
+
+const BirthSeed = [
   {
     "2008": "2,980",
     "2009": "2,925",
@@ -1019,4 +1030,16 @@
     "2018 (So far this year)": 4,
     "": ""
   }
-]
+];
+
+db.Birth
+  .remove({})
+  .then(() => db.Birth.collection.insertMany(birthSeed))
+  .then(data => {
+    console.log(data.result.n + " records inserted!");
+    process.exit(0);
+  })
+  .catch(err => {
+    console.error(err);
+    process.exit(1);
+  });

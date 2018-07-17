@@ -1,4 +1,15 @@
-[
+const mongoose = require("mongoose");
+const db = require("../models");
+
+// This file empties the FLASCHOOLGRADE collection and inserts the  data below
+
+mongoose.connect(
+  process.env.MONGODB_URI ||
+  "mongodb://localhost/reactbirthlist"
+);
+
+
+const FloridaSchoolGradeSeed = [
   {
     "District Number": "",
     "County/Distrct": "",
@@ -49980,3 +49991,15 @@
     "Grade 2009": ""
   }
 ]
+
+db.FloridaSchoolGrade
+  .remove({})
+  .then(() => db.FloridaSchoolGrade.collection.insertMany(FloridaSchoolGradeSeed))
+  .then(data => {
+    console.log(data.result.n + " records inserted!");
+    process.exit(0);
+  })
+  .catch(err => {
+    console.error(err);
+    process.exit(1);
+  });
