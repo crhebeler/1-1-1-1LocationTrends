@@ -3,9 +3,9 @@ const divorceControllers = require("../../controllers/divorceControllers");
 
 // Matches with "/api/divorce"
 router.route("/")
-  .get(deathsControllers.findOne)
-  .get(deathsControllers.findAll)
-  .post(deathsControllers.create);
+  // .get(divorceControllers.findOne)
+  .get(divorceControllers.findAll)
+  .post(divorceControllers.create);
 
 // Matches with "/api/divorce/:id"
 router

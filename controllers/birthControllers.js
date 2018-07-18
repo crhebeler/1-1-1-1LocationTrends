@@ -11,7 +11,7 @@ module.exports = {
   },
   findAll: function(req, res) {
     db.Birth
-      .find(req.query)
+      .find({})
       .sort({ date: -1 })
       .then(dbModel => res.json(dbModel))
       .catch(err => res.status(422).json(err)); //422 Unprocessable Entity (WebDAV)

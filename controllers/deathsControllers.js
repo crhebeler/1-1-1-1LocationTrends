@@ -2,7 +2,7 @@ const db = require("../models");
 
 // Defining methods for the DeathsController
 module.exports = {
-     findOne: function(req,res) {
+     findOne: function(req, res) {
         db.DeathsControllers
           .find(req.query)
           .sort({data: -1 })
