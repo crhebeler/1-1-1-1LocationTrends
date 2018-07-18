@@ -1,5 +1,5 @@
 const router = require("express").Router();
-const FloridaSchoolGradeControllers = require("../../controllers/FloridaSchoolGradeControllers");
+const FloridaSchoolGradeControllers = require("../../controllers/floridaSchoolGradeControllers");
 
 // Matches with "/api/FloridaSchoolGrade"
 router.route("/")
