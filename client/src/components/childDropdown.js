@@ -1,6 +1,6 @@
 import React from 'react';
 
-export class dropdownChild extends React.Component {
+export class ChildDropdown extends React.Component {
   constructor(props) {
     super(props);
     
@@ -15,302 +15,339 @@ export class dropdownChild extends React.Component {
   render() {
     return (
       <div>
+      <div>
         <h1>
-         You have Slected to View Data
+         You have Selected to View Data
           from {this.props.name} County 
+
+
         </h1>
         <select id="great-names" onChange={this.handleChange}>
         <option value="Alachua">
- Alachua
-</option>
+              Alachua
+              </option>
 
-<option value="Baker">
-Baker
-</option>
+              <option value="Baker">
+              Baker
+              </option>
 
-<option value="Bay">
-Bay
-</option>
+              <option value="Bay">
+              Bay
+              </option>
 
-<option value="Bradford">
-Bradford
-</option>
+              <option value="Bradford">
+              Bradford
+              </option>
 
-<option value="Brevard">
-Brevard
-</option>
+              <option value="Brevard">
+              Brevard
+              </option>
 
-<option value="Broward">
-Broward
-</option>
+              <option value="Broward">
+              Broward
+              </option>
 
-<option value="Calhoun">
-Calhoun
-</option>
+              <option value="Calhoun">
+              Calhoun
+              </option>
 
-<option value="Charlotte">
-Charlotte
-</option>
+              <option value="Charlotte">
+              Charlotte
+              </option>
 
+              <option value="Dixie">
+              Dixie
+              </option>
 
 
 
+              Dixie
+              <option value="Citrus">
 
+              Citrus
+              </option>
 
+              <option value="Clay">
+              Clay
+              </option>
 
+              <option value="Collier">
+              Collier
+              </option>
 
+              <option value="Columbia">
+              Columbia
+              </option>
 
-Dixie
-<option value="Citrus">
+              <option value="DeSoto">
+              DeSoto
+              </option>
 
-Citrus
-</option>
+              <option value="Duval">
+              Duval
+              </option>
 
-<option value="Clay">
-Clay
-</option>
+              <option value="Escambia">
+              Escambia
+              </option>
 
-<option value="Collier">
-Collier
-</option>
+              <option value="Glades">
+              Glades
+              </option>
 
-<option value="Columbia">
-Columbia
-</option>
+              <option value="Gulf">
+              Gulf
+              </option>
 
-<option value="DeSoto">
-DeSoto
-</option>
+              <option value="Hamilton">
 
-<option value="Duval">
-Duval
-</option>
+              Hamilton
+              </option>
 
-<option value="Escambia">
-Escambia
-</option>
 
-<option value="Glades">
-Glades
-</option>
 
-<option value="Gulf">
-Gulf
-</option>
+              <option value="Flagler">
 
-<option value="Hamilton">
+              Flagler
+              </option>
 
-Hamilton
-</option>
+              <option value="Franklin">
+              Franklin
+              </option>
 
+              <option value="Gadsden">
+              Gadsden
+              </option>
 
+              <option value="Gilchrist">
 
-<option value="Flagler">
+              Gilchrist
+              </option>
 
-Flagler
-</option>
+              <option value="Hardee">
+              Hardee
+              </option>
 
-<option value="Franklin">
-Franklin
-</option>
+              <option value="Hendry">
+              Hendry
+              </option>
 
-<option value="Gadsden">
-Gadsden
-</option>
 
-<option value="Gilchrist">
+              <option value="Hernando">
+              Hernando
+              </option>
 
-Gilchrist
-</option>
+              <option value="Highlands">
+              Highlands
+              </option>
+              <option value="Hillsborough">
+              Hillsborough
+              </option>
 
-<option value="Hardee">
-Hardee
-</option>
+              <option value="Holmes">
+                Holmes
+              </option>
 
-<option value="Hendry">
-Hendry
-</option>
+              <option value="Indian River">
+              Indian River
+              </option>
 
+              <option value="Jackson">
+              Jackson
+              </option>
 
-<option value="Hernando">
-Hernando
-</option>
+              <option value=" Jefferson">
 
-<option value="Highlands">
-Highlands
-</option>
-<option value="Hillsborough">
-Hillsborough
-</option>
+              Jefferson
+              </option> 
 
-<option value="Holmes">
-  Holmes
-</option>
+              <option value="Lafayette">
+              Lafayette
+              </option>
 
-<option value="Indian River">
-Indian River
-</option>
 
-<option value="Jackson">
-Jackson
-</option>
+              <option value="Lake">
+              Lake
+              </option>
 
-<option value=" Jefferson">
+              <option value="Lee">
+              Lee
+              </option>
 
-Jefferson
-</option> 
+              <option value="Leon">
+              Leon
+              </option>
 
-<option value="Lafayette">
-Lafayette
-</option>
+              <option value="Levy">
+              Levy
+              </option>
 
+              <option value="Liberty">
+              Liberty
+              </option>
 
-<option value="Lake">
-Lake
-</option>
+              <option value="Madison">
+              Madison
+              </option>
 
-<option value="Lee">
-Lee
-</option>
+              <option value="Manatee">
+              Manatee
+              </option>
 
-<option value="Leon">
-Leon
-</option>
+              <option value="Marion">
+              Marion
+              </option>
 
-<option value="Levy">
-Levy
-</option>
+              <option value="Martin">
+              Martin
+              </option>
 
-<option value="Liberty">
-Liberty
-</option>
+              <option value="Miami-Dade">
+              Miami-Dade
+              </option>
 
-<option value="Madison">
-Madison
-</option>
 
-<option value="Manatee">
-Manatee
-</option>
+              <option value="Monroe">
+              Monroe
+              </option>
 
-<option value="Marion">
-Marion
-</option>
 
-<option value="Martin">
-Martin
-</option>
+              <option value="Nassau">
+              Nassau
+              </option>
 
-<option value="Miami-Dade">
-Miami-Dade
-</option>
 
+              <option value="Okaloosa">
+              Okaloosa
+              </option>
 
-<option value="Monroe">
-Monroe
-</option>
 
+              <option value="Okeechobee">
+              Okeechobee
+              </option>
 
-<option value="Nassau">
-Nassau
-</option>
 
+              <option value="Orange">
+              Orange
+              </option>
 
-<option value="Okaloosa">
-Okaloosa
-</option>
 
+              <option value="Osceola">
+              Osceola
+              </option>
 
-<option value="Okeechobee">
-Okeechobee
-</option>
 
+              <option value="Palm Beach">
 
-<option value="Orange">
-Orange
-</option>
+              Palm Beach
+              </option>
 
 
-<option value="Osceola">
-Osceola
-</option>
+              <option value="Pasco">
 
+              Pasco
+              </option>
 
-<option value="Palm Beach">
 
-Palm Beach
-</option>
+              <option value="Pinellas">
+              Pinellas
+              </option>
 
 
-<option value="Pasco">
+              <option value="Polk">
+              Polk
+              </option>
 
-Pasco
-</option>
 
+              <option value="Putnam">
+              Putnam
+              </option>
 
-<option value="Pinellas">
-Pinellas
-</option>
+              <option value="Santa Rosa">
+              Santa Rosa
+              </option>
 
+              <option value="Sarasota">
+              Sarasota
+              </option>
 
-<option value="Polk">
-Polk
-</option>
+              <option value="Seminole">
+              Seminole
+              </option>
 
+              <option value="St. Johns">
+              St. Johns
+              </option>
 
-<option value="Putnam">
-Putnam
-</option>
+              <option value="St. Lucie">
+              St. Lucie
+              </option>
 
-<option value="Santa Rosa">
-Santa Rosa
-</option>
+              <option value="Suwannee">
+              Suwannee
+              </option>
 
-<option value="Sarasota">
-Sarasota
-</option>
+              <option value="Taylor">
+              Taylor
+              </option>
 
-<option value="Seminole">
-Seminole
-</option>
+              <option value="Union">
+              Union
+              </option>
 
-<option value="St. Johns">
-St. Johns
-</option>
+              <option value="Volusia">
+              Volusia
+              </option>
 
-<option value="St. Lucie">
-St. Lucie
-</option>
+              <option value="Wakulla">
+              Wakulla
+              </option>
 
-<option value="Suwannee">
-Suwannee
-</option>
+              <option value="Walton">
+              Wakulla
+              </option>
 
-<option value="Taylor">
-Taylor
-</option>
+              <option value="Washington">
+              Washington
+              </option>
+        </select>
+</div>
+<div>
 
-<option value="Union">
-Union
-</option>
+ <h1>
+         for the year  {this.props.year} 
 
-<option value="Volusia">
-Volusia
-</option>
 
-<option value="Wakulla">
-Wakulla
-</option>
+        </h1>
+        <select id="the-years" onChange={this.handleChangeYear}>
+          <option value="2008">2008
 
-<option value="Walton">
-Wakulla
-</option>
-
-<option value="Washington">
-Washington
-</option>
+          </option>
+          <option value="2009">2009
+          </option>
+          <option value="2010">2010
+          </option>
+          <option value="2011">2011
+          </option>
+          <option value="2012">2012
+          </option>
+          <option value="2013">2014
+          </option>
+          <option value="2015">2015
+          </option><option value="2016">2016
+           </option>
+          <option value="2017">2017
+          </option>
+          <option value="2018">2018(est)
+          </option>
         </select>
       </div>
+
+</div>
+
+
+
+      
     );
   }
 }

@@ -1,60 +1,28 @@
-import React from "react";
-import { Container, Row, Col } from 'reactstrap';
-import parentDropdown from './parentDropdown'; 
-import '../styles/Center.css';
+import React from 'react';
+import { ChildDropdown } from './ChildDropdown';
+//import { ChildDropdownYear} from './ChildDropDownYear'; 
 
-
-
-
-const map = {
-  title: 'Florida Map Orange',
-  src: 'https://fcit.usf.edu/florida/maps/pages/10400/f10400/i/f10400-05s.png' 
-};
-
-
-
-
- class Center extends React.Component {
-  render() {
-    return (
-
-      <div > 
-      <img className="map" src={map.src} alt={map.title} />
-      
-      <Container>
-      
-      
-        <Row>
-
-          <Col><h2> Death's By Location</h2>
-          <parentDropdown /> 
-          
-          </Col>
- 
-
-
-          <Col><h2> Birth's by Location </h2> </Col>
-
-          <Col><h2> Marrage Numbers By Location</h2> </Col>
-         
-        </Row>
-
-        <Row>
-          <Col><h2> Data set 4 By Location</h2></Col>
-
-
-          <Col><h2> Data set 5 Location </h2> </Col>
-
-
-
-          <Col><h2> Data set Location</h2> </Col>
-         
-        </Row>
-      
-    </Container> 
-    </div> 
-        );
+class Center extends React.Component {
+  constructor(props) {
+    super(props);
+/// This sets the Default name and year for the User to change
+    this.state = { name: '',
+                   year: ''};
+    
+    this.changeName = this.changeName.bind(this);
+   // this.changeYear = this.changeYear.bind(this);
+  }
+  
+  changeName(newName) {
+    this.setState({
+      name: newName
+    });
+  }
+   render() {
+    return <ChildDropdown name={this.state.name} onChange={this.changeName}  /> 
+   //<ChildDropdownYear year={this.state.name} onChangeYear={this.changeYear} /> 
   }
 }
 
-export default Center;
+
+export default Center; 
