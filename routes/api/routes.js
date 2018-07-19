@@ -12,7 +12,7 @@ const populationProjectionRoutes = require("../api/populationProjection");
 //Creating a listener for the routes
 router.use("/api/birth", BirthRoutes);
 router.use("/api/floridaSchoolGrade", FloridaSchoolGradeRoutes);
-router.use("/api/birth", DeathsRoutes);
+router.use("/api/deaths", DeathsRoutes);
 router.use("/api/divorce", DivorceRoutes);
 router.use("/api/marriages", MarriagesRoutes);
 router.use("/api/populationProjection", populationProjectionRoutes);

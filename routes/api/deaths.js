@@ -3,7 +3,6 @@ const deathsControllers = require("../../controllers/deathsControllers");
 
 // Matches with "/api/deaths"
 router.route("/")
-  .get(deathsControllers.findOne)
   .get(deathsControllers.findAll)
   .post(deathsControllers.create);
 

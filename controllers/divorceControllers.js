@@ -4,7 +4,7 @@ const db = require("../models");
 module.exports = {
   findOne: function(req,res) {
       db.Divorce
-        .find(req.query)
+        .find({})
         .sort({data: -1 })
         .then(dbModel => res.json(dbModel))
         .catch(err => res.status(422).json(err)); //422 Unprocessable Enttity (WebDAV)

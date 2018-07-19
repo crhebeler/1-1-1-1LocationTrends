@@ -3,7 +3,6 @@ const FloridaSchoolGradeControllers = require("../../controllers/floridaSchoolGr
 
 // Matches with "/api/FloridaSchoolGrade"
 router.route("/")
-  .get(FloridaSchoolGradeControllers.findOne)
   .get(FloridaSchoolGradeControllers.findAll)
   .post(FloridaSchoolGradeControllers.create);
 
