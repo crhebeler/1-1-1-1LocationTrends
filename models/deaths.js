@@ -20,7 +20,6 @@ var DeathsSchema = new Schema({
   County: String,
   2018: Number
 
-
 });
 
 // This creates our model from the above schema, using mongoose's model method

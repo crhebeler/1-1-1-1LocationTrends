@@ -3,7 +3,6 @@ const populationProjectionControllers = require("../../controllers/populationPro
 
 // Matches with "/api/populationProjection"
 router.route("/")
-  .get(populationProjectionControllers.findOne)
   .get(populationProjectionControllers.findAll)
   .post(populationProjectionControllers.create);
 

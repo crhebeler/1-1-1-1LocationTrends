@@ -3,7 +3,6 @@ const birthControllers = require("../../controllers/birthControllers");
 
 // Matches with "/api/birth"
 router.route("/")
-  .get(birthControllers.findOne)
   .get(birthControllers.findAll)
   .post(birthControllers.create);
 

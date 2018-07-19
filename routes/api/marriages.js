@@ -3,7 +3,6 @@ const marriagesControllers = require("../../controllers/marriagesControllers");
 
 // Matches with "/api/marriages"
 router.route("/")
-  .get(marriagesControllers.findOne)
   .get(marriagesControllers.findAll)
   .post(marriagesControllers.create);
 
