@@ -1,7 +1,6 @@
 import React from 'react';
 import '../styles/Footer.css';
-import { Card, Button, CardHeader, CardFooter, CardBlock,
-CardTitle, CardText } from 'reactstrap';
+import { Card,CardFooter} from 'reactstrap';
 
 const Footer = (props) => {
   return (

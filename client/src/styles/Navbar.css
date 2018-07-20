@@ -3,6 +3,22 @@ body,html,nav{background-color: #FF8B00;}
 .navbar-custom {
     background-color: #ff5500;
 }
+
+
+
+
+
+ul.nav li a, ul.nav li a:visited {
+    color: black !important;
+}
+
+ul.nav li a:hover, ul.nav li a:active {
+    color: orangered !important;
+}
+
+ul.nav li.active a {
+    color: white !important;
+}
 /* change the brand and text color */
 .navbar-custom .navbar-brand,
 .navbar-custom .navbar-text {

@@ -6,7 +6,7 @@ import { Jumbotron, Container } from 'reactstrap';
 
 const map = {
   title: 'Florida Map Orange',
-  src: 'https://fcit.usf.edu/florida/maps/pages/10400/f10400/i/f10400-05s.png' 
+  src: 'https://github.com/crhebeler/LocationTrendsAPP/blob/master/client/florida.png?raw=true' 
 };
 
 

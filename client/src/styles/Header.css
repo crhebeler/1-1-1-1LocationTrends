@@ -1,13 +1,12 @@
 html,body{text-align: center; 
-height: 300px;
-border-color:white;}
+}
 
 .jumbotron {background-color: black;
+    padding: 8px; 
     border-color:white;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     color: beige; 
-    ...
-    min-height: 300px;
+    height: 365px;
 }
 .map{ height: 180px;
     width: 180px;

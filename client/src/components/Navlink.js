@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom'
 import '../styles/Navbar.css';
-
+// ReactStrap Imports 
 import {
   Collapse,
   Navbar,
@@ -14,7 +14,7 @@ import {
   DropdownToggle,
   DropdownMenu,
   DropdownItem } from 'reactstrap';
-
+/// Had to change to NavLinker NavLink taken by ReactStrap 
   export default class NavLinker extends React.Component {
   constructor(props) {
     super(props);
