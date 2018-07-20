@@ -1,28 +1,19 @@
-body,html{background-color: #FF8B00;}
-
-.topnav {
-    background-color:orange;
-    overflow: hidden;
+body,html,nav{background-color: #FF8B00;}
+/* change the background color */
+.navbar-custom {
+    background-color: #ff5500;
 }
-
-/* Style the links inside the navigation bar */
-.nav a { display: inline-block;
-    float: center;
-    color:orangered;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-    font-size: 17px;
+/* change the brand and text color */
+.navbar-custom .navbar-brand,
+.navbar-custom .navbar-text {
+    color: rgba(255,255,255,.8);
 }
-
-/* Change the color of links on hover */
-.nav a:hover { display: inline-block;
-    background-color: black;
-    color: orange;
+/* change the link color */
+.navbar-custom .navbar-nav .nav-link {
+    color: rgba(255,255,255,.5);
 }
-
-/* Add a color to the active/current link */
-.nav a.active { display: inline-block;
-    background-color:orangered;
-    color: white;
+/* change the color of active or hovered links */
+.navbar-custom .nav-item.active .nav-link,
+.navbar-custom .nav-item:hover .nav-link {
+    color: #ffffff;
 }

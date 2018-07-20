@@ -15,8 +15,8 @@ class Center extends React.Component {
 
     
 /// This sets the Default name and year for the User to change
-    this.state = { name: '',
-                   year: ''};
+    this.state = { name: '____',
+                   year: '-'};
     
     this.changeName = this.changeName.bind(this);
    // this.changeYear = this.changeYear.bind(this);
