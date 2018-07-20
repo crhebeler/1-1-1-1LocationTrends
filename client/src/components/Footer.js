@@ -1,19 +1,23 @@
 import React from 'react';
 import '../styles/Footer.css';
-
-
+import { Card, Button, CardHeader, CardFooter, CardBlock,
+CardTitle, CardText } from 'reactstrap';
 
 const Footer = (props) => {
   return (
-    <div>
- <footer>
-<p> Exmple Location App 2018</p> 
-</footer>      
 
+<footer> 
 
+    
 
-    </div>
+    <Card>
+       
+        <CardFooter className="text-muted">Location Trends App  &copy; 2018</CardFooter>
+      </Card>
+ 
+   </footer> 
   );
 };
+
 
 export default Footer;

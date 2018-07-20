@@ -18,7 +18,7 @@ const Center = (props) => {
 
         <Container fluid>
 
-          <h1 className="display-3">Location Trends APP</h1>
+          <h2 className="display-3">Location Trends APP</h2>
 
           <p className="lead">Helping you find the Data you need !</p>
           

@@ -2,9 +2,18 @@ import React from 'react';
 import { ChildDropdown } from './ChildDropdown';
 //import { ChildDropdownYear} from './ChildDropDownYear'; 
 
+
+
+
+
+
 class Center extends React.Component {
   constructor(props) {
     super(props);
+
+
+
+    
 /// This sets the Default name and year for the User to change
     this.state = { name: '',
                    year: ''};
@@ -19,7 +28,21 @@ class Center extends React.Component {
     });
   }
    render() {
-    return <ChildDropdown name={this.state.name} onChange={this.changeName}  /> 
+    return (
+    
+    <form onSubmit={this.handleSubmit}>
+    <label>
+  
+      <ChildDropdown name={this.state.name} onChange={this.changeName}  /> 
+    </label>
+    <br/> 
+    <br/> 
+    <input type="submit" value="Submit" />
+  </form>
+);
+    
+    
+  
    //<ChildDropdownYear year={this.state.name} onChangeYear={this.changeYear} /> 
   }
 }

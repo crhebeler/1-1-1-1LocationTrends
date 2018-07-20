@@ -1,6 +1,12 @@
 
+    
 
-footer{background:#ffa600; }
-p{text-align: center;}
+footer{background-color: black;
+font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+color: white; } 
 
+.card-footer{background-color: black;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: white; } 
+    
 
