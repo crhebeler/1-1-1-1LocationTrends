@@ -2,8 +2,12 @@ import React from 'react';
 import { Jumbotron, Container } from 'reactstrap';
 // All Headers will be styled the same in this CSS file
 import '../styles/Map.css';
-import Iframe from 'react-iframe'
 
+
+const map = {
+  title: 'Florida Map Orange',
+  src: 'https://github.com/crhebeler/LocationTrendsAPP/blob/master/client/florida.png?raw=true' 
+};
 
 
 
@@ -16,20 +20,12 @@ const ZillowHead = (props) => {
 
         <Container fluid>
 
-          <h1 className="display-3">Zillow API</h1>
+          <h1 className="display-3">Florida Interactive County Map </h1>
 
           <p className="lead">Helping you find the Data you need !</p>
-          
-         
+          <img className="map" src={map.src} alt={map.title} />
+          <p>  Expore the Florida couties by using the interactive map </p> 
 
-<Iframe url="https://maps.hometownlocator.com/map_V3.html?mode=county&state=FL"
-        width="650px"
-        height="650px"
-        id="myId"
-        className="FloridaInteractiveMap"
-        display="initial"
-        position="relative"
-        allowFullScreen/>
 
 
 
