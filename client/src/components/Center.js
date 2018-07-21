@@ -1,7 +1,7 @@
 import React from 'react';
 import { ChildDropdown } from './ChildDropdown';
 //import { ChildDropdownYear} from './ChildDropDownYear'; 
-
+import axios from 'axios'; 
 
 
 
@@ -11,9 +11,6 @@ class Center extends React.Component {
   constructor(props) {
     super(props);
 
-
-
-    
 /// This sets the Default name and year for the User to change
     this.state = { name: '____',
                    year: '-',
@@ -28,6 +25,17 @@ class Center extends React.Component {
       name: newName
     });
   }
+
+  handleSubmit(event){ 
+    console.log(event)
+    event.preventDefault()
+    console.log("handleSubmit"); 
+    axios.get('/api/birth').then(response => {
+      console.log(response.data); 
+    });
+}
+  
+
    render() {
     return (
     
