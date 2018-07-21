@@ -13,13 +13,7 @@ module.exports = {
       .then(dbModel => res.json(dbModel))
       .catch(err => res.status(422).json(err)); //422 Unprocessable Entity (WebDAV)
 },
-  findAll: function(req, res) {
-    // db.Birth
-    //   .find({'County': 'Orange '})
-    //   .sort({ date: -1 })
-    //   .then(dbModel => res.json(dbModel))
-    //   .catch(err => res.status(422).json(err)); //422 Unprocessable Entity (WebDAV
-  },
+  
   findById: function (req, res) {
     db.Birth
       .findById(req.params.id)
