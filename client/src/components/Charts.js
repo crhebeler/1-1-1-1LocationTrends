@@ -12,6 +12,15 @@ const Charts = (props) => {
       <ChartsHeader /> 
  <h1> Charts is Working </h1> 
 
+ <br/> 
+ <br/> 
+ <br/> 
+ <br/> 
+ <br/> 
+ <br/> 
+ <br/> 
+ <br/> 
+
  <Footer /> 
     </div>
   );

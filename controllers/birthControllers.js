@@ -3,6 +3,7 @@ const db = require("../models");
 // Defining methods for the BirthController
 module.exports = {
 
+
   findAll: function (req, res) {
     // Used to check route
     // res.json({success:true}) 
@@ -11,6 +12,13 @@ module.exports = {
       .find({})
       .then(dbModel => res.json(dbModel))
       .catch(err => res.status(422).json(err)); //422 Unprocessable Entity (WebDAV)
+},
+  findAll: function(req, res) {
+    // db.Birth
+    //   .find({'County': 'Orange '})
+    //   .sort({ date: -1 })
+    //   .then(dbModel => res.json(dbModel))
+    //   .catch(err => res.status(422).json(err)); //422 Unprocessable Entity (WebDAV
   },
   findById: function (req, res) {
     db.Birth

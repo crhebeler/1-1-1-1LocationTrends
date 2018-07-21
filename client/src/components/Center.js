@@ -1,6 +1,9 @@
 import React from '../../../../../AppData/Local/Microsoft/TypeScript/2.9/node_modules/@types/react';
 import { ChildDropdown } from './ChildDropdown';
+
 // import { ChildDropdownYear} from './ChildDropDownYear'; 
+//import { ChildDropdownYear} from './ChildDropDownYear'; 
+import axios from 'axios'; 
 
 
 
@@ -11,12 +14,10 @@ class Center extends React.Component {
   constructor(props) {
     super(props);
 
-
-
-    
 /// This sets the Default name and year for the User to change
     this.state = { name: '____',
-                   year: '-'};
+                   year: '-',
+                  dataset:''};
     
     this.changeName = this.changeName.bind(this);
    // this.changeYear = this.changeYear.bind(this);
@@ -27,6 +28,17 @@ class Center extends React.Component {
       name: newName
     });
   }
+
+  handleSubmit(event){ 
+    console.log(event)
+    event.preventDefault()
+    console.log("handleSubmit"); 
+    axios.get('/api/birth').then(response => {
+      console.log(response.data); 
+    });
+}
+  
+
    render() {
     return (
     
