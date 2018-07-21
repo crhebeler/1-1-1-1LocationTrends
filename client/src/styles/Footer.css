@@ -8,5 +8,6 @@ color: white; }
 .card-footer{background-color: black;
     font-family: 'Ubuntu', sans-serif;
     color: white; } 
+    .text-muted{color:white;}
     
 

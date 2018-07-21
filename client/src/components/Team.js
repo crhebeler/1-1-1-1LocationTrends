@@ -37,7 +37,7 @@ const Team = (props) => {
           <Row>
           <Col></Col>
           <Col> <h3> Craig  <br/> Brooks </h3> </Col>
-          <Col> <h3> Christopher Hebeler </h3>  </Col>
+          <Col> <h3> Christopher <br/> Hebeler </h3>  </Col>
           <Col></Col>
         </Row>
         </Container> 

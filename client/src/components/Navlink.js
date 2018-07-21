@@ -47,7 +47,7 @@ import {
               </NavItem>
 
               <NavItem>
-                <NavLink to='Zillow'>  <Link to='/Zillow'>Zillow</Link></NavLink>
+                <NavLink to='Zillow'>  <Link to='/Zillow'>Interactive Map</Link></NavLink>
               </NavItem>
 
                  <NavItem>
@@ -66,7 +66,7 @@ import {
                   </DropdownItem>
                 
                   <DropdownItem>
-                  <Link to='/Zillow'>Zillow</Link>
+                  <Link to='/Zillow'>Interactive Map</Link>
                   </DropdownItem>
 
                     <DropdownItem>
