@@ -2,41 +2,41 @@ const db = require("../models");
 
 // Defining methods for the DeathsController
 module.exports = {
-     findOne: function(req, res) {
-        db.DeathsControllers
-          .find({})
-          .sort({data: -1 })
-          .then(dbModel => res.json(dbModel))
-          .catch(err => res.status(422).json(err)); //422 Unprocessable Enttity (WebDAV)
-    },
-  findAll: function(req, res) {
-    db.DeathsControllers
+
+  findAll: function (req, res) {
+    db.Deaths
       .find({})
-      .sort({ date: -1 })
+      .sort({
+        date: -1
+      })
       .then(dbModel => res.json(dbModel))
       .catch(err => res.status(422).json(err)); //422 Unprocessable Entity (WebDAV)
   },
-  findById: function(req, res) {
-    db.DeathsControllers
+  findById: function (req, res) {
+    db.Deaths
       .findById(req.params.id)
       .then(dbModel => res.json(dbModel))
       .catch(err => res.status(422).json(err)); //422 Unprocessable Entity (WebDAV)
   },
-  create: function(req, res) {
-    db.DeathsControllers
+  create: function (req, res) {
+    db.Deaths
       .create(req.body)
       .then(dbModel => res.json(dbModel))
       .catch(err => res.status(422).json(err)); //422 Unprocessable Entity (WebDAV)
   },
-  update: function(req, res) {
-    db.DeathsControllers
-      .findOneAndUpdate({ _id: req.params.id }, req.body)
+  update: function (req, res) {
+    db.Deaths
+      .findOneAndUpdate({
+        _id: req.params.id
+      }, req.body)
       .then(dbModel => res.json(dbModel))
       .catch(err => res.status(422).json(err)); //422 Unprocessable Entity (WebDAV)
   },
-  remove: function(req, res) {
-    db.DeathsControllers
-      .findById({ _id: req.params.id })
+  remove: function (req, res) {
+    db.Deaths
+      .findById({
+        _id: req.params.id
+      })
       .then(dbModel => dbModel.remove())
       .then(dbModel => res.json(dbModel))
       .catch(err => res.status(422).json(err)); //422 Unprocessable Entity (WebDAV)

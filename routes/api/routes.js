@@ -1,11 +1,11 @@
 //Defining all of our routes
 const router = require("express").Router();
-const BirthRoutes = require("../api/birth");
-const FloridaSchoolGradeRoutes = require("../api/floridaSchoolGrade");
-const DeathsRoutes = require("../api/deaths");
-const DivorceRoutes = require("../api/divorce");
-const MarriagesRoutes = require("../api/marriages");
-const populationProjectionRoutes = require("../api/populationProjection");
+const BirthRoutes = require("./birth");
+const FloridaSchoolGradeRoutes = require("./floridaSchoolGrade");
+const DeathsRoutes = require("./deaths");
+const DivorceRoutes = require("./divorce");
+const MarriagesRoutes = require("./marriages");
+const populationProjectionRoutes = require("./populationProjection");
 
 
 

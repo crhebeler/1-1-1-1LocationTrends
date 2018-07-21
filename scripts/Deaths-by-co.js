@@ -1,15 +1,14 @@
 const mongoose = require("mongoose");
-const db = require("..models");
+const db = require("../models");
 
 // This file empties the Deaths collection and inserts the deaths data below
 
 mongoose.connect(
   process.env.MONGODB_URI ||
-  "mongodb://localhost/reactbirthlist"
+  "mongodb://localhost/location_db"
 );
 
-const DeathsSeed = [
-  {
+const DeathsSeed = [{
     "2008": "1,635",
     "2009": "1,685",
     "2010": "1,717",
@@ -22,7 +21,7 @@ const DeathsSeed = [
     "2017": "1,936",
     "County": "Alachua",
     "2018 (So far this year)": "1,009",
-  
+
   },
   {
     "2008": 236,

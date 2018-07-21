@@ -5,12 +5,11 @@ const db = require("../models");
 
 mongoose.connect(
   process.env.MONGODB_URI ||
-  "mongodb://localhost/reactbirthlist"
+  "mongodb://localhost/location_db"
 );
 
 
-const BirthSeed = [
-  {
+const BirthSeed = [{
     "2008": "2,980",
     "2009": "2,925",
     "2010": "2,866",
@@ -1034,7 +1033,7 @@ const BirthSeed = [
 
 db.Birth
   .remove({})
-  .then(() => db.Birth.collection.insertMany(birthSeed))
+  .then(() => db.Birth.collection.insertMany(BirthSeed))
   .then(data => {
     console.log(data.result.n + " records inserted!");
     process.exit(0);

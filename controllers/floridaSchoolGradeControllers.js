@@ -2,13 +2,7 @@ const db = require("../models");
 
 // Defining methods for the FloridaSchoolGradeController
 module.exports = {
-     findOne: function(req,res) {
-        db.FloridaSchoolGrade
-          .find({})
-          .sort({data: -1 })
-          .then(dbModel => res.json(dbModel))
-          .catch(err => res.status(422).json(err)); //422 Unprocessable Enttity (WebDAV)
-    },
+     
   findAll: function(req, res) {
     db.FloridaSchoolGrade
       .find({})
