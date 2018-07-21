@@ -5,12 +5,11 @@ const db = require("../models");
 
 mongoose.connect(
   process.env.MONGODB_URI ||
-  "mongodb://localhost/reactbirthlist"
+  "mongodb://localhost/location_db"
 );
 
 
-const MarriagesSeed = [
-  {
+const MarriagesSeed = [{
     "2008": "1,733",
     "2009": "1,605",
     "2010": "1,619",
