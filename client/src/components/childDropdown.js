@@ -17,11 +17,14 @@ export class ChildDropdown extends React.Component {
       <div>
       <div>
         <h1>
-         You have Selected to View Data
-          from {this.props.name} County 
+       Please Select a County and Year to view the Data Trends of Your Choice </h1> 
+       <br/> 
+       <br/> 
 
+<h1> 
+          You have chosen to view the Data avaiable for{this.props.name} County 
 
-        </h1>
+ </h1>
         <select id="great-names" onChange={this.handleChange}>
         <option value="Alachua">
               Alachua
@@ -314,11 +317,7 @@ export class ChildDropdown extends React.Component {
 </div>
 <div>
 
- <h1>
-         for the year  {this.props.year} 
-
-
-        </h1>
+ <h1>     for the year  {this.props.year} </h1>
         <select id="the-years" onChange={this.handleChangeYear}>
           <option value="2008">2008
 
@@ -342,6 +341,38 @@ export class ChildDropdown extends React.Component {
           </option>
         </select>
       </div>
+
+<div>
+
+<h1>    Data Type Choices {this.props.dataselection} </h1>
+       <select id="the-data" onChange={this.handleChangeData}>
+
+         <option value="Births">Births
+         </option> 
+
+         <option value="Deaths">Deaths
+         </option>
+
+            <option value="Marriages">Marriages
+         </option> 
+
+         <option value="Marriage-Dissolution">Marriage Dissolutions
+         </option>   
+         
+         <option value="Population-Growth"> Population Growth 
+         </option> 
+
+         <option value="School-Grades"> School Grades 
+         </option>
+        
+
+</select>
+      </div>
+
+
+
+
+
 
 </div>
 
