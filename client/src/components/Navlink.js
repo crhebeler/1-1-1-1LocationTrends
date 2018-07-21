@@ -34,7 +34,7 @@ import {
       <div>
         <Navbar color="#FF8B00;"  light expand="md">
 
-          <NavbarBrand color="white;" href="/">Welcome</NavbarBrand>
+          <NavbarBrand color="white;" href="/">Location Trends APP</NavbarBrand>
           <NavbarToggler onClick={this.toggle} />
           <Collapse isOpen={this.state.isOpen} navbar>
             <Nav className="ml-auto" navbar>

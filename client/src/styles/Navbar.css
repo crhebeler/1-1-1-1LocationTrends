@@ -1,4 +1,5 @@
-body,html,nav{background-color: #FF8B00;}
+body,html,nav{background-color: #FF8B00;
+    font-family: 'Ubuntu', sans-serif;}
 /* change the background color */
 .navbar-custom {
     background-color: #ff5500;

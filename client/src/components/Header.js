@@ -1,6 +1,6 @@
 import React from 'react';
 import { Jumbotron, Container } from 'reactstrap';
-//mport '../styles/Header.css';
+import '../styles/Header.css';
 
 
 
