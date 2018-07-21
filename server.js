@@ -22,30 +22,11 @@ if (process.env.NODE_ENV === "production") {
   app.use(express.static("client/build"));
 }
 
-// app.use(express.methodOverride());
-
-// Database configuration
-// var databaseUrl = "project_db";
-// var collections = ["birth","deaths","divorce","floridaSchoolGrade","marriages","populationProjection"];
-
-// Hook mongojs config to db variable
-// const db = mongojs(databaseUrl, collections);
-
-// Log any mongojs errors to console
-// db.on("error", function(error) {
-//   console.log("Database Error:", error);
-// });
-
 
 mongoose.Promise = Promise;
 
 // Connect to the Mongo DB
 mongoose.connect(process.env.MONGODB_URI || 'mongodb://localhost/location_db');
-
-// Once logged in to the db through mongoose, log a success message
-// db.once('open', function() {
-//   console.log('Mongoose connection successful.');
-// });
 
 
 // Start the API server
