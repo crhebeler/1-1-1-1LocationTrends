@@ -4,11 +4,11 @@ const db = require("../models");
 module.exports = {
 
   findAll: function (req, res) {
+    // Used to check route
+    // res.json({success:true}) 
+
     db.Deaths
       .find({})
-      .sort({
-        date: -1
-      })
       .then(dbModel => res.json(dbModel))
       .catch(err => res.status(422).json(err)); //422 Unprocessable Entity (WebDAV)
   },

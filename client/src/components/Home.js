@@ -10,14 +10,12 @@ import NavLink from './Navlink';
 const Home = (props) => {
   return (
     <div>
-
-
-
-        < NavLink /> 
-      <Header /> 
-<Center />
-<DataResults /> 
-<Footer /> 
+      
+     < NavLink /> 
+     <Header /> 
+     <Center />
+     <DataResults /> 
+     <Footer /> 
   
   
 
