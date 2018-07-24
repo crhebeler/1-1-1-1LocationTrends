@@ -6,7 +6,6 @@ module.exports = {
   findAll: function (req, res) {
     // Used to check route
     // res.json({success:true}) 
-
     db.Deaths
       .find({})
       .then(dbModel => res.json(dbModel))

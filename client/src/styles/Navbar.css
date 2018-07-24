@@ -1,4 +1,8 @@
+
+body,html,nav{background-color: white;
+
 body,html,nav{
+
     font-family: 'Ubuntu', sans-serif;}
  a{ color: black;}
  a.active {
