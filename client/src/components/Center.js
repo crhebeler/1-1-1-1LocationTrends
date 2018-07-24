@@ -37,7 +37,9 @@ class Center extends React.Component {
       console.log(response.data); 
     });
 }
-  
+
+
+
 
    render() {
     return (
