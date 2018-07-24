@@ -14,14 +14,17 @@ export class ChildDropdown extends React.Component {
 
   render() {
     return (
+    
       <div>
-      <div>
-        <h1>
-         You have Selected to View Data
-          from {this.props.name} County 
+        <h4>
+       Please Select a County and Year to view the Data Trends of Your Choice </h4> 
+       <br/> 
+       <br/> 
 
+<h4> 
+          You have chosen to view the Data avaiable for{this.props.name} County 
 
-        </h1>
+ </h4>
         <select id="great-names" onChange={this.handleChange}>
         <option value="Alachua">
               Alachua
@@ -312,42 +315,6 @@ export class ChildDropdown extends React.Component {
               </option>
         </select>
 </div>
-<div>
-
- <h1>
-         for the year  {this.props.year} 
-
-
-        </h1>
-        <select id="the-years" onChange={this.handleChangeYear}>
-          <option value="2008">2008
-
-          </option>
-          <option value="2009">2009
-          </option>
-          <option value="2010">2010
-          </option>
-          <option value="2011">2011
-          </option>
-          <option value="2012">2012
-          </option>
-          <option value="2013">2014
-          </option>
-          <option value="2015">2015
-          </option><option value="2016">2016
-           </option>
-          <option value="2017">2017
-          </option>
-          <option value="2018">2018(est)
-          </option>
-        </select>
-      </div>
-
-</div>
-
-
-
-      
-    );
+);
   }
 }
