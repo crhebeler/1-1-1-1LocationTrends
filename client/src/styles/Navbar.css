@@ -1,6 +1,9 @@
-body,html,nav{background-color: #FF8B00;
+body,html,nav{
     font-family: 'Ubuntu', sans-serif;}
  a{ color: black;}
  a.active {
     background-color: #4CAF50;
     color: white;} 
+
+    .logo,.navbar-brand{text-align: right;
+    font: 40px;  }

@@ -1,12 +1,8 @@
 import React from 'react';
 import { ChildDropdown } from './ChildDropdown';
-
-// import { ChildDropdownYear} from './ChildDropDownYear'; 
-//import { ChildDropdownYear} from './ChildDropDownYear'; 
+import {ParentDropdownData} from './ParentDropdownData'; 
+import { ParentDropdownYear } from './ParentDropdownYear'; 
 import axios from 'axios'; 
-
-
-
 
 
 
@@ -16,19 +12,35 @@ class Center extends React.Component {
 
 /// This sets the Default name and year for the User to change
     this.state = { name: '____',
-                   dataselection: '',
                    year: '',
-                };
+                  data:''};
     
     this.changeName = this.changeName.bind(this);
-   // this.changeYear = this.changeYear.bind(this);
+
+    this.changeYear = this.changeYear.bind(this);
+
+   // this.changeDate = this.changeDate.bind(this); 
   }
   
   changeName(newName) {
     this.setState({
       name: newName
+      
     });
   }
+  changeYear(newYear) {
+    this.setState({
+      year: newYear
+      
+    });
+  }
+  changeData(newData) {
+    this.setState({
+     data: newData
+      
+    });
+  }
+  
 
   handleSubmit(event){ 
     console.log(event)
@@ -45,11 +57,21 @@ class Center extends React.Component {
     
     <form onSubmit={this.handleSubmit}>
     <label>
+       <ParentDropdownYear year={this.state.year} onChange={this.changeYear} /> 
+  
+    </label>
+    
+    <label>
+    
+      <ParentDropdownData  data={this.state.data} onChange={this.changeData} />
+  
+    </label>
+
+    <label>
   
       <ChildDropdown name={this.state.name} onChange={this.changeName}  /> 
     </label>
-    <br/> 
-    <br/> 
+    
     <input type="submit" value="Submit" />
   </form>
 );
@@ -61,4 +83,4 @@ class Center extends React.Component {
 }
 
 
-export default Center; 
+export default Center;  
