@@ -6,7 +6,7 @@ export class ParentDropdownData extends React.Component {
   constructor(props) {
     super(props);
 
-    this.state = { data: 'Default' };
+    this.state = { data: 'data' };
     
     this.changeData = this.changeData.bind(this);
   }

@@ -6,20 +6,41 @@ import axios from 'axios';
 
 
 
+
+
+
+
+
+
+
+
+
+    const url = '/api/deaths'
+    axios.get(url).then(response => console.log(response));
+
+
+    const url2 = '/api/deaths'
+fetch(url2).then(data=>console.log(data));
+
+
 class Center extends React.Component {
   constructor(props) {
     super(props);
 
+   
+
+
+    
 /// This sets the Default name and year for the User to change
     this.state = { name: '____',
-                   year: '',
-                  data:''};
+                   year:   '' ,
+                    data:  '' }   ;
     
     this.changeName = this.changeName.bind(this);
 
     this.changeYear = this.changeYear.bind(this);
 
-   // this.changeDate = this.changeDate.bind(this); 
+    this.changeData = this.changeData.bind(this); 
   }
   
   changeName(newName) {
@@ -46,11 +67,17 @@ class Center extends React.Component {
     console.log(event)
     event.preventDefault()
     console.log("handleSubmit"); 
-    axios.get('/api/birth').then(response => {
+    axios.post('/api/birth').then(response => {
       console.log(response.data); 
     });
 }
   
+
+
+
+
+
+
 
    render() {
     return (
