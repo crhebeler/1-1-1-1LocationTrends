@@ -1,7 +1,7 @@
 import React from 'react';
-import { Jumbotron, Container } from 'reactstrap';
-import '../styles/Header.css';
 
+import '../styles/Header.css';
+import {Container ,  Row, Col } from 'reactstrap';
 
 
 const map = {
@@ -9,33 +9,21 @@ const map = {
   src: 'https://github.com/crhebeler/LocationTrendsAPP/blob/master/client/florida.png?raw=true' 
 };
 
-
-
-const Center = (props) => {
-  return (
-    <div>
-      <Jumbotron fluid>
-
-        <Container fluid>
-
-          <h2 className="display-3">Location Trends APP</h2>
-
-          <p className="lead">Helping you find the Data you need !</p>
-          
-         
-   <img className="map" src={map.src} alt={map.title} />
-    <div/> 
-    
-
-
-        </Container>
-
-      </Jumbotron>
-
-
-
-    </div>
-  );
-};
-
-export default Center;
+export default class Header extends React.Component {
+  render() {
+    return (
+    <Container>
+   
+<Row>
+         <Col> <img className="map" src={map.src} alt={map.title} /></Col>
+         <Col> </Col> 
+         <Col> </Col> 
+         <Col>.col</Col>
+         <Col>    
+         <br/>   <p>Helping you find the Data you need !</p> </Col>
+         <Col>.col</Col>
+       </Row>
+</Container>
+    );
+  }
+}
