@@ -5,6 +5,34 @@ import axios from 'axios';
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+{/*}
 function getBirthData() {
   return axios.get('/api/birth');
 }
@@ -41,7 +69,7 @@ axios.all([getBirthData(), getDeathData(),getDivorceData(),getFloridaSchoolGrade
     axios.interceptors.response.use(response => {
       console.log('Response:', response)
       return response
-    })
+    })*/} 
 
 
 
@@ -49,17 +77,3 @@ axios.all([getBirthData(), getDeathData(),getDivorceData(),getFloridaSchoolGrade
 
 
 
-
-  }));
-
-
-
-const DataResults = (props) => {
-  return (
-    <div>
-  {  } 
-    </div>
-  );
-}
-
-export default DataResults; 

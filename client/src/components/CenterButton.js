@@ -1,14 +1,26 @@
 import React from "react";
-
-export const CenterButton = props => (
-  <button {...props} style={{ float: "right", marginBottom: 10 }} className="btn btn-success">
-    {props.children}
-  </button>
-);
+import {Component} from "react"; 
 
 
+ class Hello extends React.Component {
+  constructor() {
+     super();
+     this.state() 
+     {
+        title: "Click here"
+     }
+  }
 
+  changeTitle = () => {
+     this.setState({ title: "New title" });
+  };
 
+  render() {
+      return <h1 onClick={this.changeTitle}>{this.state.title}</h1>;
+  }
+}
+
+export default Hello; 
 
 
 

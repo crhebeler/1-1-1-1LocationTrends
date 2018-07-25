@@ -4,7 +4,7 @@ import {ParentDropdownData} from './ParentDropdownData';
 import { ParentDropdownYear } from './ParentDropdownYear'; 
 import axios from 'axios'; 
 import '../styles/Center.css';
-import {CenterButton} from './CenterButton'; 
+//import  { Hello } from './CenterButton'; 
 
 
 
@@ -111,13 +111,16 @@ class Center extends React.Component {
     
     {/* } <input type="submit" value="Submit" /> */}
 
+ 
+
+
   </form>
 
 
 
 
 );
-    <CenterButton /> 
+
 
    //<ChildDropdownYear year={this.state.name} onChangeYear={this.changeYear} /> 
   }
