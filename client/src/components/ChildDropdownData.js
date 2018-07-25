@@ -17,9 +17,11 @@ export class DataBase extends React.Component {
 
 
       <div>
-        <h1>
-         Data from  {this.props.DataBase} County 
-        </h1>
+        <h4>
+      
+                    Data Choice {this.props.DataBase} 
+    
+        </h4>
       
              
         <select id="data-base"onChange={this.handleChange}>

@@ -1,7 +1,14 @@
 
-body,html,nav{background-color: white;
+html,body{text-align: center;
+    max-width: width auto;
+    max-height: height auto; 
+/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ffb76b+0,ffa73d+50,ff7c00+51,ff7f04+100;Orange+Gloss */
+background: rgb(255,183,107); /* Old browsers */
+background: -moz-linear-gradient(-45deg, rgba(255,183,107,1) 0%, rgba(255,167,61,1) 50%, rgba(255,124,0,1) 51%, rgba(255,127,4,1) 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(-45deg, rgba(255,183,107,1) 0%,rgba(255,167,61,1) 50%,rgba(255,124,0,1) 51%,rgba(255,127,4,1) 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(135deg, rgba(255,183,107,1) 0%,rgba(255,167,61,1) 50%,rgba(255,124,0,1) 51%,rgba(255,127,4,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffb76b', endColorstr='#ff7f04',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
 
-body,html,nav{
 
     font-family: 'Ubuntu', sans-serif;}
  a{ color: black;}
@@ -11,3 +18,11 @@ body,html,nav{
 
     .logo,.navbar-brand{text-align: right;
     font: 40px;  }
+    .navbar{margin: 40px;
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#999999+0,ffffff+100 */
+  background: rgb(153,153,153); /* Old browsers */
+  background: -moz-linear-gradient(-45deg, rgba(153,153,153,1) 0%, rgba(255,255,255,1) 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(-45deg, rgba(153,153,153,1) 0%,rgba(255,255,255,1) 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(135deg, rgba(153,153,153,1) 0%,rgba(255,255,255,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#999999', endColorstr='#ffffff',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */;
+    }

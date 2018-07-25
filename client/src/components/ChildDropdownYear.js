@@ -17,9 +17,11 @@ export class DataYear extends React.Component {
 
 
       <div>
-        <h1>
-         Data from  {this.props.DataYear} County 
-        </h1>
+        <h4>
+
+       Year   {this.props.DataYear}  Selection
+         <br/>
+        </h4>
       
              
         <select id="data-year"onChange={this.handleChange}>

@@ -5,7 +5,14 @@ footer{background-color: black;
 font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 color: white; } 
 
-.card-footer{background-color: black;
+.card-footer{/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#999999+0,ffffff+100 */
+    background: rgb(153,153,153); /* Old browsers */
+    background: -moz-linear-gradient(-45deg, rgba(153,153,153,1) 0%, rgba(255,255,255,1) 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(-45deg, rgba(153,153,153,1) 0%,rgba(255,255,255,1) 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(135deg, rgba(153,153,153,1) 0%,rgba(255,255,255,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#999999', endColorstr='#ffffff',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+    
+
     font-family: 'Ubuntu', sans-serif;
     color: white; } 
     .text-muted{color:white;}

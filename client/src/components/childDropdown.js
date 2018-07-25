@@ -16,14 +16,13 @@ export class ChildDropdown extends React.Component {
     return (
     
       <div>
-        <h4>
-       Please Select a County and Year to view the Data Trends of Your Choice </h4> 
-       <br/> 
-       <br/> 
+      
 
 <h4> 
-          You have chosen to view the Data avaiable for{this.props.name} County 
 
+          You have Selected {this.props.name} <br/> County 
+
+ 
  </h4>
         <select id="great-names" onChange={this.handleChange}>
         <option value="Alachua">

@@ -1,74 +1,16 @@
-html,body{
-
-  }
-  
-  /* 
-    ##Device = Laptops, Desktops
-    ##Screen = B/w 1025px to 1280px
-  */
-  
-  @media (min-width: 1025px) and (max-width: 1280px) {
-    
-  
-    
-  }
-  
-  /* 
-    ##Device = Tablets, Ipads (portrait)
-    ##Screen = B/w 768px to 1024px
-  */
-  
-  @media (min-width: 768px) and (max-width: 1024px) {
-    
-
-    
-  }
-  
-  /* 
-    ##Device = Tablets, Ipads (landscape)
-    ##Screen = B/w 768px to 1024px
-  */
-  
-  @media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
-
-    
-  }
-  
-  /* 
-    ##Device = Low Resolution Tablets, Mobiles (Landscape)
-    ##Screen = B/w 481px to 767px
-  */
-  
-  @media (min-width: 481px) and (max-width: 767px) {
-    
-
-    
-  }
-  
-  /* 
-    ##Device = Most of the Smartphones Mobiles (Portrait)
-    ##Screen = B/w 320px to 479px
-  */
-  
-  @media (min-width: 320px) and (max-width: 480px) {
-    
-
-    
-  }
 
 
-.container {/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ff9b21+0,f4c8a8+99,f4c8a8+99,f4c8a8+99 */
-    background: #ff9b21; /* Old browsers */
-    background: -moz-linear-gradient(-45deg, #ff9b21 0%, #f4c8a8 99%, #f4c8a8 99%, #f4c8a8 99%); /* FF3.6-15 */
-    background: -webkit-linear-gradient(-45deg, #ff9b21 0%,#f4c8a8 99%,#f4c8a8 99%,#f4c8a8 99%); /* Chrome10-25,Safari5.1-6 */
-    background: linear-gradient(135deg, #ff9b21 0%,#f4c8a8 99%,#f4c8a8 99%,#f4c8a8 99%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff9b21', endColorstr='#f4c8a8',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
-    padding: 8px; 
-    border-color:white;
-  
-    height: 265px;
+.container {/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#999999+0,ffffff+100 */
+  background: rgb(153,153,153); /* Old browsers */
+  background: -moz-linear-gradient(-45deg, rgba(153,153,153,1) 0%, rgba(255,255,255,1) 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(-45deg, rgba(153,153,153,1) 0%,rgba(255,255,255,1) 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(135deg, rgba(153,153,153,1) 0%,rgba(255,255,255,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#999999', endColorstr='#ffffff',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */;
+    height: 275px;
 }
-.map{ height: 220px;
+.map{ background-color: white; 
+  height: 220px;
     width: 220px;
-    float: left;
-background-color: white;}
+    padding:3px;
+  margin: 10px; } 
+    
