@@ -2,6 +2,8 @@ import React from 'react';
 import { ChildDropdown } from './ChildDropdown';
 import {ParentDropdownData} from './ParentDropdownData'; 
 import { ParentDropdownYear } from './ParentDropdownYear'; 
+import { Link } from 'react-router-dom'
+import { Button } from 'reactstrap';
 import axios from 'axios'; 
 import '../styles/Center.css';
 //import  { Hello } from './CenterButton'; 
@@ -112,7 +114,10 @@ class Center extends React.Component {
      
     <br/> 
 
-    <input type="submit" value="Submit" />
+     <Link to='/Results'>Render Data</Link>
+
+
+    {/*<input type="submit" value="Submit" />*/}
 
  
 

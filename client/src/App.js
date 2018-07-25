@@ -6,7 +6,7 @@ import './index.css';
 import Zillow from "./components/Zillow"; 
 import Charts from "./components/Charts"; 
 import Team from "./components/Team";
-
+import Results from "./components/Results";
 
 
 class App extends Component {
@@ -18,6 +18,7 @@ class App extends Component {
           <Route path="/Charts" component={Charts} />
           <Route path="/Zillow" component={Zillow} />
           <Route path="/Team" component={Team} />
+          <Route path="/Results" component={Results} /> 
           
         </div>
       </Router>
