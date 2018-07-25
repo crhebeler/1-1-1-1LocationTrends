@@ -24,6 +24,9 @@ const Team = (props) => {
       
   
 
+      <h1> Meet the Team </h1> 
+
+      <br/> 
 
               <Container>
       
@@ -39,12 +42,25 @@ const Team = (props) => {
           <Col> <h3> Craig  <br/> Brooks </h3> </Col>
           <Col> <h3> Christopher <br/> Hebeler </h3>  </Col>
           <Col></Col>
+          <br/> 
+        <br/> 
         </Row>
+        <br/> 
+        <br/> 
+        <br/> 
+        <br/> 
+        <br/> 
+        <br/> 
+        <br/> 
+        <br/> 
         </Container> 
 
         <br/> 
         <br/> 
           <br/> 
+        <br/> 
+        <br/> 
+       
         <br/> 
      
      

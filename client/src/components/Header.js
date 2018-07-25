@@ -29,6 +29,7 @@ export default class Header extends React.Component {
    
 <Row>
   <br/> 
+  <br/>
          <Col> <img className="map" src={map.src} alt={map.title} /></Col>
         
    
