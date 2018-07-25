@@ -14,25 +14,20 @@ const map = {
 const TeamHeader = (props) => {
     return (
       <div>
-        <Jumbotron fluid>
-  
-          <Container fluid>
-  
-            <h1 className="display-3">Meet The Team</h1>
+   
+            <h1> Meet The Team</h1>
 
 
             
   
             <p className="lead"> We enjoy helping you find the Data you need !</p>
             
-            <img className="map" src={map.src} alt={map.title} />
+        
       <div/> 
       
   
   
-          </Container>
-  
-        </Jumbotron>
+        
   
       </div>
     );

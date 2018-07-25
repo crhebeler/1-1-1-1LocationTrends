@@ -1,14 +1,18 @@
 .chris{  height: 220px;
-    width: 200px;}
+    width: 200px;
+margin: 20px}
 
     .craig{  height: 220px;
-        width: 200px;}
+        width: 200px;
+        margin: 20px}
 
         html,body{text-align: center;}
 
 
         .card{text-align: center;
         }
+
+        .container{height: 350px;}
 
         .Jumbotron{/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#999999+0,ffffff+100 */
             background: rgb(153,153,153); /* Old browsers */

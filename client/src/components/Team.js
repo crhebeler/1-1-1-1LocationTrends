@@ -21,7 +21,7 @@ const Team = (props) => {
 
     <div>
          <NavLink /> 
-         <TeamHeader /> 
+      
   
 
 
@@ -41,6 +41,12 @@ const Team = (props) => {
           <Col></Col>
         </Row>
         </Container> 
+
+        <br/> 
+        <br/> 
+          <br/> 
+        <br/> 
+     
      
  <Footer /> 
 

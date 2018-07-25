@@ -2,6 +2,19 @@ import React from 'react';
 
 import '../styles/Header.css';
 import {Container ,  Row, Col } from 'reactstrap';
+import { Link } from 'react-router-dom'
+import {
+  Collapse,
+  Navbar,
+  NavbarToggler,
+  NavbarBrand,
+  Nav,
+  NavItem,
+  NavLink,
+  UncontrolledDropdown,
+  DropdownToggle,
+  DropdownMenu,
+  DropdownItem } from 'reactstrap';
 
 
 const map = {
@@ -28,7 +41,21 @@ export default class Header extends React.Component {
          
       
          </Col>
-         <Col>.col</Col>
+
+         <Col> 
+<br/> 
+         <h4> <ul> Click on a Link to Navigate</ul> </h4> 
+
+     <Link to='/'>Home</Link>
+     <br/>
+     <br/>
+     <Link to='/Charts'>Charts</Link>
+     <br/>
+     <br/>
+     <Link to='/Zillow'>Interactive Map</Link>
+     <br/>
+     <br/> 
+      <Link to='/Team'>Meet the Team </Link>  </Col> 
        </Row>
 </Container>
     );

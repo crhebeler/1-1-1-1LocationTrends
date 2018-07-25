@@ -108,8 +108,11 @@ class Center extends React.Component {
   
       <ChildDropdown name={this.state.name} onChange={this.changeName}  /> 
     </label>
-    
-    {/* } <input type="submit" value="Submit" /> */}
+     <br/>
+     
+    <br/> 
+
+    <input type="submit" value="Submit" />
 
  
 
