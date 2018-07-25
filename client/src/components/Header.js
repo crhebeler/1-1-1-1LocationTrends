@@ -33,6 +33,8 @@ export default class Header extends React.Component {
         
    
          <Col>    
+        
+         <br/> 
          <h1> Location Trends APP </h1> 
          <h5>   Helping you find the Data you need !</h5>
          <br/> 
