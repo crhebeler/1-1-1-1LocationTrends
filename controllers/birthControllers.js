@@ -6,8 +6,7 @@ module.exports = {
 
   findAll: function (req, res) {
     // Used to check route
-     res.json({success:true}) 
-
+    //  res.json({success:true}) 
     db.Birth
       .find({})
       .then(dbModel => res.json(dbModel))
