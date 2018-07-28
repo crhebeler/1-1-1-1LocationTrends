@@ -6,19 +6,15 @@ export class ParentDropdownData extends React.Component {
   constructor(props) {
     super(props);
 
-    this.state = { data: 'data' };
+    this.state = { data: this.props.data };
     
-    this.changeData = this.changeData.bind(this);
+
   }
   
-  changeData(newData) {
-    this.setState({
-      data: newData
-    });
-  }
+
 
   render() {
-    return <DataBase name={this.state.data} onChange={this.changeData} />
+    return <DataBase name={this.state.data} onChange={this.props.changeData} changeData={this.props.changeData} />
   }
 }
 

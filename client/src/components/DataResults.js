@@ -3,36 +3,6 @@ import '../styles/DataResults.css';
 import axios from 'axios'; 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-{/*}
 function getBirthData() {
   return axios.get('/api/birth');
 }
@@ -41,16 +11,16 @@ function getDeathData() {
   return axios.get('/api/death');
 }
 function getDivorceData() {
-  return axios.get('/api/divorce');
+  retur);
+}
+ 
+function getPopData() {n axios.get('/api/divorce');
 }
 function getFloridaSchoolGrades() {
   return axios.get('/api/FloridaSchoolGrade');
 }
 function getMarriageData() {
-  return axios.get('/api/marriages');
-}
- 
-function getPopData() {
+  return axios.get('/api/marriages'
   return axios.get('/api/populationProjection');
 }
  
@@ -69,7 +39,7 @@ axios.all([getBirthData(), getDeathData(),getDivorceData(),getFloridaSchoolGrade
     axios.interceptors.response.use(response => {
       console.log('Response:', response)
       return response
-    })*/} 
+ 
 
 
 

@@ -13,10 +13,20 @@ import '../styles/Center.css';
 
 
 
- const Example = {
-   title: 'Miami',
-    src: 'https://github.com/crhebeler/My-JSX-code-snippets/blob/master/miami.png?raw=true' 
-  }; 
+
+
+
+
+
+
+
+{/*componentDidMount() {
+  axios.get(`/api/deaths`)
+    .then(res => {
+      const posts = res.data.results.map(obj => ({title: obj.title, overview: obj.overview}));
+      this.setState({ posts });
+    }); */} 
+
 
 
 
@@ -26,8 +36,6 @@ import '../styles/Center.css';
    // axios.get(url).then(response => console.log(response));
 
 
-    const url2 = '/api/deaths'
-fetch(url2).then(data=>console.log(data));
 
 
 class Center extends React.Component {
@@ -39,9 +47,9 @@ class Center extends React.Component {
 
     
 /// This sets the Default name and year for the User to change
-    this.state = { name: '____',
-                   year:   '' ,
-                    data:  '' }   ;
+    this.state = { name: 'Alachua',
+                   year:   '2008' ,
+                    data:  'Births' }   ;
     
     this.changeName = this.changeName.bind(this);
 
@@ -74,7 +82,13 @@ class Center extends React.Component {
     console.log(event)
     event.preventDefault()
     console.log("handleSubmit"); 
-    axios.post('/api/birth').then(response => {
+    axios.get(`/api/all`, {
+      params: { 
+       name: this.state.name,
+       data: this.state.data,
+      year:this.state.year
+      }
+    }).then(response => {
       console.log(response.data); 
     });
 }
@@ -91,7 +105,7 @@ class Center extends React.Component {
    render() {
     return (
     
-    <form className="Form" onSubmit={this.handleSubmit}>
+    <form className="Form" onSubmit={this.handleSubmit.bind(this)}>
     <label>
 
       <br/> 
@@ -102,7 +116,7 @@ class Center extends React.Component {
     
     <label>
     <br/> 
-      <ParentDropdownData  data={this.state.data} onChange={this.changeData} />
+      <ParentDropdownData  data={this.state.data} onChange={this.changeData} changeData={this.changeData.bind(this)} />
   
     </label>
 
@@ -114,10 +128,7 @@ class Center extends React.Component {
      
     <br/> 
 
-     <Link to='/Results'>Render Data</Link>
-
-
-    {/*<input type="submit" value="Submit" />*/}
+<input   type="submit" value="Submit" />
 
  
 
