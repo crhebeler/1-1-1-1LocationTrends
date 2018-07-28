@@ -109,7 +109,7 @@ class Center extends React.Component {
     <label>
 
       <br/> 
-       <ParentDropdownYear year={this.state.year} onChange={this.changeYear} /> 
+       <ParentDropdownYear year={this.state.year} onChange={this.changeYear} changeYear={this.changeYear.bind(this)} /> 
 
  
     </label>
