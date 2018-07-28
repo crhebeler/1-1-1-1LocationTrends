@@ -6,18 +6,14 @@ export class ParentDropdownYear extends React.Component {
   constructor(props) {
     super(props);
 
-    this.state = { year: 'year' };
+    this.state = { year: this.props.year };
+   
     
-    this.changeData = this.changeData.bind(this);
-  }
-  
-  changeData(newYear) {
-    this.setState({
-      year: newYear
-    });
   }
 
+
+  
   render() {
-    return <DataYear  name={this.state.year} onChange={this.changeData} />
+    return <DataYear  name={this.state.year} onChange={this.props.changeYear} changeData={this.props.changeYear} />
   }
 }

@@ -9,7 +9,7 @@ export class DataBase extends React.Component {
 
   handleChange(e) {
     const DataBase = e.target.value;
-    this.props.onChange(DataBase);
+    this.props.changeData(DataBase);
   }
 
   render() {

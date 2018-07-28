@@ -1,5 +1,6 @@
 
 html,body{text-align: center;
+    backgroundImage: "url(" + 'https://cdn.pixabay.com/photo/2017/03/05/00/34/panorama-2117310_1280.jpg+');  
     max-width: width auto;
     max-height: height auto; 
 /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ffb76b+0,ffa73d+50,ff7c00+51,ff7f04+100;Orange+Gloss */

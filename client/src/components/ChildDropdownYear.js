@@ -9,7 +9,7 @@ export class DataYear extends React.Component {
 
   handleChange(e) {
     const DataYear = e.target.value;
-    this.props.onChange(DataYear);
+    this.props.changeData(DataYear);
   }
 
   render() {
@@ -29,7 +29,9 @@ export class DataYear extends React.Component {
         <option value="2008">2008
 
           </option>
+
           <option value="2009">2009
+          
           </option>
           <option value="2010">2010
           </option>
