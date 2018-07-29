@@ -49,7 +49,8 @@ class Center extends React.Component {
 /// This sets the Default name and year for the User to change
     this.state = { name: 'Alachua',
                    year:   '2008' ,
-                    data:  'Births' }   ;
+                   data:  'Births',
+                   dataRequest: [] }   ;
     
     this.changeName = this.changeName.bind(this);
 
@@ -89,51 +90,38 @@ class Center extends React.Component {
       year:this.state.year
       }
     }).then(response => {
-      console.log(response.data); 
+      console.log(response.data);
+      var responseData = []; 
+      responseData.push(response.data)
+      this.setState({dataRequest: [{2008: 399, 2009: 378, 2010: 350, 2011: 341, 2012: 341, 2013: 349, 2014: 365, 2015: 336, 2016: 343, 2017: 313, _id: "5b5b76e92fefa7537c0e9eed", County: "Baker", "": ""}] }) 
     });
-}
-
-
-
-
-
-
-
-
-
-
-   render() {
-    return (
+} 
+  render() {
+    return (   
+      <div>
     
-    <form className="Form" onSubmit={this.handleSubmit.bind(this)}>
-    <label>
-
-      <br/> 
-       <ParentDropdownYear year={this.state.year} onChange={this.changeYear} changeYear={this.changeYear.bind(this)} /> 
-
- 
-    </label>
-    
-    <label>
-    <br/> 
-      <ParentDropdownData  data={this.state.data} onChange={this.changeData} changeData={this.changeData.bind(this)} />
-  
-    </label>
-
-    <label>
-  
-      <ChildDropdown name={this.state.name} onChange={this.changeName}  /> 
-    </label>
-     <br/>
-     
-    <br/> 
-
-<input   type="submit" value="Submit" />
-
- 
+        <form className="Form" onSubmit={this.handleSubmit.bind(this)}>
+          <label>
+            <br/> 
+            <ParentDropdownYear year={this.state.year} onChange={this.changeYear} changeYear={this.changeYear.bind(this)} /> 
+          </label>
+          <label>
+            <br/> 
+            <ParentDropdownData  data={this.state.data} onChange={this.changeData} changeData={this.changeData.bind(this)} />
+          </label>
+          <label>
+            <ChildDropdown name={this.state.name} onChange={this.changeName}  /> 
+          </label>
+          <br/>
+          <br/> 
+          <input   type="submit" value="Submit" />
+        </form> 
+        
+     {this.state.dataRequest.map( data =>{return data.toString() } )  }
 
 
-  </form>
+      </div> 
+
 
 
 
