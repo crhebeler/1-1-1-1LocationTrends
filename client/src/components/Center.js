@@ -6,6 +6,7 @@ import { Link } from 'react-router-dom'
 import { Button } from 'reactstrap';
 import axios from 'axios'; 
 import '../styles/Center.css';
+import { DataRequest } from './DataRequest';
 //import  { Hello } from './CenterButton'; 
 
 
@@ -91,9 +92,16 @@ class Center extends React.Component {
       }
     }).then(response => {
       console.log(response.data);
+      var arrayResponse = []; 
+      for (var key in response.data ){
+        if (response.data.hasOwnProperty(key)) {
+          arrayResponse.push(response.data[key])
+        }
+      }
       var responseData = []; 
       responseData.push(response.data)
-      this.setState({dataRequest: [{2008: 399, 2009: 378, 2010: 350, 2011: 341, 2012: 341, 2013: 349, 2014: 365, 2015: 336, 2016: 343, 2017: 313, _id: "5b5b76e92fefa7537c0e9eed", County: "Baker", "": ""}] }) 
+      this.setState({dataRequest: arrayResponse })
+
     });
 } 
   render() {
@@ -117,8 +125,13 @@ class Center extends React.Component {
           <input   type="submit" value="Submit" />
         </form> 
         
-     {this.state.dataRequest.map( data =>{return data.toString() } )  }
+        <ul>  
+          {/* Json data displaying on page as   */}
 
+
+
+     {this.state.dataRequest ? this.state.dataRequest.map( data => <DataRequest key={data.toString()} data={data}/>) : null } 
+</ul> 
 
       </div> 
 
