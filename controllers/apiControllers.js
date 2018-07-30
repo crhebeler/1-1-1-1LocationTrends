@@ -6,12 +6,18 @@ module.exports = {
 
  find: function (req, res) { 
     console.log("hello",req.query); 
+    var county = req.query.name;
+    var year = req.query.year;
+
+    var countyObj = {"County": county}
+    var yearObj = {[year]: 1, "County": 1}
+
+    console.log("year obj", yearObj)
   
     if(req.query.data.toLowerCase()==="births")  { 
         ///query for by name and year in MONGODB
-
       db.Birth
-        .find({})
+        .find(countyObj, yearObj)
         .then(dbModel => res.json(dbModel))
         .catch(err => res.status(422).json(err)); ///422 U
 
