@@ -127,21 +127,28 @@ class Center extends React.Component {
           <br/> 
           <input   type="submit" value="Submit" />
         </form> 
-        
-        <ul>  
-          {/* Json data displaying on page as   */}
-
-
-
-    {this.state.dataRequest ? this.state.dataRequest.map( data => <DataRequest key={JSON.stringify(data)} data={data}/>) : null } 
-</ul> 
-
+        <table>
+          <thead>
+            <tr>
+              <td>County</td>
+              <td>2008</td>
+              <td>2009</td>
+              <td>2010</td>
+              <td>2011</td>
+              <td>2012</td>
+              <td>2013</td>
+              <td>2014</td>
+              <td>2015</td>
+              <td>2016</td>
+              <td>2017</td>
+              <td>2018</td>
+            </tr>  
+          </thead>
+          <tbody>
+            {this.state.dataRequest ? this.state.dataRequest.map( data => <DataRequest key={JSON.stringify(data)} data={data}/>) : null } 
+          </tbody>
+        </table>
       </div> 
-
-
-
-
-
 );
 
 

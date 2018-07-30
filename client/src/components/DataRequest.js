@@ -14,41 +14,44 @@ export class DataRequest extends React.Component {
   
   render() {  
     return (
-      <div>
-        <li>
+      <tr>
+        <td>
           {this.props.data["County"]}
-        </li> 
-        <li>
+        </td> 
+        <td>
           {this.props.data["2008"]}
-        </li>
-        <li>
+        </td>
+        <td>
           {this.props.data["2009"]}
-        </li> 
-        <li>
+        </td> 
+        <td>
           {this.props.data["2010"]}
-        </li> 
-        <li>
+        </td> 
+        <td>
           {this.props.data["2011"]}
-        </li> 
-        <li>
+        </td> 
+        <td>
           {this.props.data["2012"]}
-        </li> 
-        <li>
+        </td> 
+        <td>
           {this.props.data["2013"]}
-        </li> 
-        <li>
+        </td> 
+        <td>
           {this.props.data["2014"]}
-        </li> 
-        <li>
+        </td> 
+        <td>
           {this.props.data["2015"]}
-        </li> 
-        <li>
+        </td> 
+        <td>
           {this.props.data["2016"]}
-        </li> 
-        <li>
+        </td> 
+        <td>
           {this.props.data["2017"]}
-        </li> 
-      </div> 
+        </td> 
+        <td>
+          {this.props.data["2018 (So far this year)"]}
+        </td> 
+      </tr> 
     ); 
   }
 }

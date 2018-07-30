@@ -7,18 +7,18 @@ var Schema = mongoose.Schema;
 // This is similar to a Sequelize model
 var MarriagesSchema = new Schema({
   // `2008` must be of type Number
-    2008: Number,
-    2009: Number,
-    2010: Number,
-    2011: Number,
-    2012: Number,
-    2013: Number,
-    2014: Number,
-    2015: Number,
-    2016: Number,
-    2017: Number,
+    2008: String,
+    2009: String,
+    2010: String,
+    2011: String,
+    2012: String,
+    2013: String,
+    2014: String,
+    2015: String,
+    2016: String,
+    2017: String,
     County: String,
-    2018: Number
+    2018: String
     
 });
 
