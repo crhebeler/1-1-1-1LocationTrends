@@ -7,7 +7,7 @@ import { Button } from 'reactstrap';
 import axios from 'axios'; 
 import '../styles/Center.css';
 import { DataRequest } from './DataRequest';
-//import  { Hello } from './CenterButton'; 
+import  _ from 'lodash'; 
 
 
 
@@ -93,14 +93,17 @@ class Center extends React.Component {
     }).then(response => {
       console.log(response.data);
       var arrayResponse = []; 
-      for (var key in response.data ){
-        if (response.data.hasOwnProperty(key)) {
-          arrayResponse.push(response.data[key])
-        }
-      }
       var responseData = []; 
-      responseData.push(response.data)
-      this.setState({dataRequest: arrayResponse })
+      for (var key in response.data ){
+        if (response.data.hasOwnProperty(key)) { 
+        
+          var flatData = _.flattenDeep(responseData);
+          arrayResponse.push(response.data[key]);
+          responseData = []; 
+        } 
+      }
+      console.log("Foobar",arrayResponse);
+         this.setState({dataRequest: arrayResponse })
 
     });
 } 
@@ -130,7 +133,7 @@ class Center extends React.Component {
 
 
 
-     {this.state.dataRequest ? this.state.dataRequest.map( data => <DataRequest key={data.toString()} data={data}/>) : null } 
+    {this.state.dataRequest ? this.state.dataRequest.map( data => <DataRequest key={JSON.stringify(data)} data={data}/>) : null } 
 </ul> 
 
       </div> 

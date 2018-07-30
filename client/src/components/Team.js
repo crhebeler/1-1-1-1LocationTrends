@@ -1,7 +1,6 @@
 import React from 'react';
 import NavLink from './Navlink';
 import Footer from './Footer'; 
-import TeamHeader from './TeamHeader'; 
 import '../styles/Team.css';
 import { Container, Row, Col } from 'reactstrap';
 
