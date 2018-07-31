@@ -54,7 +54,7 @@ module.exports = {
         .catch(err => res.status(422).json(err)); ///422
 
         } else {
-        res.status(404).json({response:"Hello"}); 
+        res.status(404).json({response:"Api Controllers"}); 
     }
   }, 
 }; 
