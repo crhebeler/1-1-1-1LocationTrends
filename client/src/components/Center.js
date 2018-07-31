@@ -6,7 +6,8 @@ import { Link } from 'react-router-dom'
 import { Button } from 'reactstrap';
 import axios from 'axios'; 
 import '../styles/Center.css';
-//import  { Hello } from './CenterButton'; 
+import { DataRequest } from './DataRequest';
+import  _ from 'lodash'; 
 
 
 
@@ -49,7 +50,8 @@ class Center extends React.Component {
 /// This sets the Default name and year for the User to change
     this.state = { name: 'Alachua',
                    year:   '2008' ,
-                    data:  'Births' }   ;
+                   data:  'Births',
+                   dataRequest: [] }   ;
     
     this.changeName = this.changeName.bind(this);
 
@@ -89,55 +91,64 @@ class Center extends React.Component {
       year:this.state.year
       }
     }).then(response => {
-      console.log(response.data); 
+      console.log(response.data);
+      var arrayResponse = []; 
+      var responseData = []; 
+      for (var key in response.data ){
+        if (response.data.hasOwnProperty(key)) { 
+        
+          var flatData = _.flattenDeep(responseData);
+          arrayResponse.push(response.data[key]);
+          responseData = []; 
+        } 
+      }
+      console.log("Foobar",arrayResponse);
+         this.setState({dataRequest: arrayResponse })
+
     });
-}
-
-
-
-
-
-
-
-
-
-
-   render() {
-    return (
+} 
+  render() {
+    return (   
+      <div>
     
-    <form className="Form" onSubmit={this.handleSubmit.bind(this)}>
-    <label>
-
-      <br/> 
-       <ParentDropdownYear year={this.state.year} onChange={this.changeYear} changeYear={this.changeYear.bind(this)} /> 
-
- 
-    </label>
-    
-    <label>
-    <br/> 
-      <ParentDropdownData  data={this.state.data} onChange={this.changeData} changeData={this.changeData.bind(this)} />
-  
-    </label>
-
-    <label>
-  
-      <ChildDropdown name={this.state.name} onChange={this.changeName}  /> 
-    </label>
-     <br/>
-     
-    <br/> 
-
-<input   type="submit" value="Submit" />
-
- 
-
-
-  </form>
-
-
-
-
+        <form className="Form" onSubmit={this.handleSubmit.bind(this)}>
+          <label>
+            <br/> 
+            <ParentDropdownYear year={this.state.year} onChange={this.changeYear} changeYear={this.changeYear.bind(this)} /> 
+          </label>
+          <label>
+            <br/> 
+            <ParentDropdownData  data={this.state.data} onChange={this.changeData} changeData={this.changeData.bind(this)} />
+          </label>
+          <label>
+            <ChildDropdown name={this.state.name} onChange={this.changeName}  /> 
+          </label>
+          <br/>
+          <br/> 
+          <input   type="submit" value="Submit" />
+        </form> 
+        <table>
+          <thead>
+            <tr>
+              <td>County</td>
+              <td>2008</td>
+              <td>2009</td>
+              <td>2010</td>
+              <td>2011</td>
+              <td>2012</td>
+              <td>2013</td>
+              <td>2014</td>
+              <td>2015</td>
+              <td>2016</td>
+              <td>2017</td>
+              <td>2018</td>
+            </tr>  
+          </thead>
+          <tbody>
+            {this.state.dataRequest ? this.state.dataRequest.map( data => <DataRequest key={JSON.stringify(data)} data={data}/>) : null } 
+          </tbody>
+        </table>
+      </div> 
 );
 
 
