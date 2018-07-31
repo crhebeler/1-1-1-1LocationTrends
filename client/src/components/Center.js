@@ -4,37 +4,14 @@ import {ParentDropdownData} from './ParentDropdownData';
 import { ParentDropdownYear } from './ParentDropdownYear'; 
 import { Link } from 'react-router-dom'
 import { Button } from 'reactstrap';
-import axios from 'axios'; 
-import '../styles/Center.css';
 import { DataRequest } from './DataRequest';
-import  _ from 'lodash'; 
+import '../styles/Center.css';
+import axios from 'axios'; 
+import  _ from 'lodash'; //Fix for the nested array probem 
 
 
 
 
-
-
-
-
-
-
-
-
-
-{/*componentDidMount() {
-  axios.get(`/api/deaths`)
-    .then(res => {
-      const posts = res.data.results.map(obj => ({title: obj.title, overview: obj.overview}));
-      this.setState({ posts });
-    }); */} 
-
-
-
-
-
-
-    //const url = '/api/deaths'
-   // axios.get(url).then(response => console.log(response));
 
 
 
@@ -59,13 +36,13 @@ class Center extends React.Component {
 
     this.changeData = this.changeData.bind(this); 
   }
-  
+  ///Name of County to select
   changeName(newName) {
     this.setState({
       name: newName
       
     });
-  }
+  }/// Name of Year of selction of data 
   changeYear(newYear) {
     this.setState({
       year: newYear
@@ -84,7 +61,7 @@ class Center extends React.Component {
     console.log(event)
     event.preventDefault()
     console.log("handleSubmit"); 
-    axios.get(`/api/all`, {
+    axios.get(`/api/all`, { /// axios grabing the api routes from created api all folder//
       params: { 
        name: this.state.name,
        data: this.state.data,
@@ -96,7 +73,7 @@ class Center extends React.Component {
       var responseData = []; 
       for (var key in response.data ){
         if (response.data.hasOwnProperty(key)) { 
-        
+        {/* nested arrays caused half of the data to not show  this was the fix*/}
           var flatData = _.flattenDeep(responseData);
           arrayResponse.push(response.data[key]);
           responseData = []; 
@@ -129,25 +106,27 @@ class Center extends React.Component {
         </form> 
         <table>
           <thead>
-            <tr>
-              <td>County</td>
-              <td>2008</td>
-              <td>2009</td>
-              <td>2010</td>
-              <td>2011</td>
-              <td>2012</td>
-              <td>2013</td>
-              <td>2014</td>
-              <td>2015</td>
-              <td>2016</td>
-              <td>2017</td>
-              <td>2018</td>
+            <tr> {/* Dynamic created here */}
+              <td></td> {/* County*/}
+              <td></td>{/*2008*/}
+              <td></td>{/*2009*/}
+              <td></td>{/*2010*/}
+              <td></td>{/*2011*/}
+              <td></td>{/*2012*/}
+              <td></td>{/*2013*/}
+              <td></td>{/*2014*/}
+              <td></td>{/*2015*/}
+              <td></td>{/*2016*/}
+              <td></td>{/*2017*/}
+              <td></td>{/*2018*/}
             </tr>  
           </thead>
-          <tbody>
+          <div className="DataCenter" > 
+          <tbody >                            {/*JSon to stringy to make the key unqie NO DUPLICATE KEYS*/}
             {this.state.dataRequest ? this.state.dataRequest.map( data => <DataRequest key={JSON.stringify(data)} data={data}/>) : null } 
           </tbody>
-        </table>
+          </div>  
+        </table> {/* end of dynamic table */}
       </div> 
 );
 
