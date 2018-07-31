@@ -4,11 +4,19 @@ import Footer from './Footer';
 import ChartsHeader from './ChartsHeader'; 
 import {Bar, Line, Pie} from 'react-chartjs-2';
 import React, {Component} from 'react';
+import { Card } from 'reactstrap';
 import axios from 'axios'; 
 
 
+const styleContain = {
+  backgroundColor:'white',
+  margin: '30px',
+ 
 
+};
 
+const div ={  width: '70%', 
+height:'60%',}
 
  class Charts extends Component{ 
    
@@ -80,10 +88,15 @@ import axios from 'axios';
   
     render() {
     return (
+
+
+
+
       <div className="charts">
       <NavLink /> 
+      <Card style={styleContain} > 
        {/* <ChartsHeader />  */}
-       <div style={{width:'70%'}}> 
+       <div style={div}> 
        <Line
           data={this.state.chartData}
           options={{
@@ -101,6 +114,7 @@ import axios from 'axios';
 	             }}
 />
          </div>   
+         </Card> 
             <Footer/>
             
       </div>

@@ -17,10 +17,17 @@ const map = {
   src: 'https://github.com/crhebeler/LocationTrendsAPP/blob/master/client/florida.png?raw=true' 
 };
 
+
+
+const headStyle = {
+  height:'280px'
+
+};
+
 export default class Header extends React.Component {
   render() {
     return (
-    <Container>
+    <Container style={headStyle}>
    
 <Row>
   <br/> 

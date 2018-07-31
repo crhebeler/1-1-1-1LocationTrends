@@ -41,9 +41,7 @@ export class DataBase extends React.Component {
          <option value="Population-Growth"> Population Growth 
          </option> 
 
-         <option value="School-Grades"> School Grades 
         
-        </option>
         </select>
       </div>
     );

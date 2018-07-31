@@ -2,6 +2,16 @@ import React from 'react';
 import '../styles/Footer.css';
 import { Card,CardFooter} from 'reactstrap';
 
+
+
+
+
+const footStyle = {
+color: 'black'
+};
+
+
+
 const Footer = (props) => {
   return (
 
@@ -11,7 +21,7 @@ const Footer = (props) => {
 
     <Card>
        
-        <CardFooter className="text-muted">Location Trends App  &copy; 2018  </CardFooter>
+        <CardFooter style={footStyle} className="text-muted">Location Trends App  &copy; 2018  </CardFooter>
       </Card>
  
    </footer> 
