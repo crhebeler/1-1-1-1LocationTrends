@@ -61,7 +61,7 @@ const NavStyleInline = {  height:'90px'
               </NavItem>
 
               <NavItem>
-                <NavLink to='Map'>  <Link to='/Map'><h4>Interactive Map</h4></Link></NavLink>
+                <NavLink to='Maps'>  <Link to='/Maps'><h4>Interactive Map</h4></Link></NavLink>
               </NavItem>
 
                  <NavItem>
@@ -80,7 +80,7 @@ const NavStyleInline = {  height:'90px'
                   </DropdownItem>
                 
                   <DropdownItem>
-                  <Link to='/Map'>Interactive Map</Link>
+                  <Link to='/Maps'>Interactive Map</Link>
                   </DropdownItem>
 
                     <DropdownItem>
