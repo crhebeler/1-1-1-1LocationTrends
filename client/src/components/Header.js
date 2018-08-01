@@ -38,9 +38,9 @@ export default class Header extends React.Component {
          <Col>    
         
          <h1> Location Trends APP </h1> 
+         <br/>
          <h4>   Giving you valuable insights on the current data trends by location</h4>
-         <p> Select your Data Type ,Year and Florida County
-            Below to Render Results</p> 
+        
          
          
       
