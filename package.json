@@ -11,9 +11,12 @@
   "private": true,
   "scripts": {
     "client-install": "npm install --prefix client",
+    "start": "node server.js",
+    "server": "nodemon server.js",
     "client": "npm start --prefix client",
-    "start": "webpack -p --progress --profile --colors && node server",
-    "start:dev": "node server"
+    "dev": "concurrently \"npm run server\" \"npm run client\"",
+    "build": "cd client && npm install && npm run build",
+    "heroku-postbuild": "npm run build"
   },
   "engines": {
     "node": ">=6"
