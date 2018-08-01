@@ -89,9 +89,10 @@ class Center extends React.Component {
       <div>
         
         <form className="Form" onSubmit={this.handleSubmit.bind(this)}>
-  
-        <h4> Select your Data Type ,Year<br/> and Florida County
-           <br/> <u>Below to Render Results</u> </h4>
+  <div className="instructions"> 
+        Select your Data Type ,Year<br/> and Florida County
+           <br/> Below to Render Results
+           </div> 
           <label>
             <ParentDropdownYear year={this.state.year} onChange={this.changeYear} changeYear={this.changeYear.bind(this)} /> 
           </label>
