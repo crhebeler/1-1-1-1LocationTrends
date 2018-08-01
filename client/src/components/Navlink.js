@@ -14,7 +14,21 @@ import {
   DropdownToggle,
   DropdownMenu,
   DropdownItem } from 'reactstrap';
-/// Had to change to NavLinker NavLink taken by ReactStrap 
+
+
+
+
+
+
+const NavStyleInline = {  height:'90px'
+
+}; 
+
+
+
+
+
+
   export default class NavLinker extends React.Component {
   constructor(props) {
     super(props);
@@ -32,26 +46,26 @@ import {
   render() {
     return (
       <div>
-        <Navbar color="#FF8B00;"  light expand="md">
+        <Navbar style={NavStyleInline} color="#FF8B00;"  light expand="md">
 
-          <NavbarBrand className="logo" color="white;" href="/"> Location Trends APP</NavbarBrand>
+          <NavbarBrand className="logo" color="white;" href="/"><h1> Location Trends APP</h1></NavbarBrand>
           <NavbarToggler onClick={this.toggle} />
           <Collapse isOpen={this.state.isOpen} navbar>
             <Nav className="ml-auto" navbar>
               <NavItem color="#FF8B00;" >
-              <NavLink color="#black;" to='/Home'>  <Link to='/'>Home</Link></NavLink>
+              <NavLink color="#black;" to='/Home'>  <Link to='/'><h4>Home</h4></Link></NavLink>
               </NavItem>
               
               <NavItem>
-                <NavLink to='/Charts'>  <Link to='/Charts'>Charts</Link></NavLink>
+                <NavLink to='/Charts'>  <Link to='/Charts'><h4>Charts</h4></Link></NavLink>
               </NavItem>
 
               <NavItem>
-                <NavLink to='Map'>  <Link to='/Map'>Interactive Map</Link></NavLink>
+                <NavLink to='Map'>  <Link to='/Map'><h4>Interactive Map</h4></Link></NavLink>
               </NavItem>
 
                  <NavItem>
-                <NavLink to='Team'>  <Link to='/Team'>Meet the Team</Link></NavLink>
+                <NavLink to='Team'>  <Link to='/Team'><h4>Meet the Team</h4></Link></NavLink>
               </NavItem>
               <UncontrolledDropdown nav inNavbar>
                 <DropdownToggle nav caret>
