@@ -38,7 +38,7 @@ export class DataBase extends React.Component {
          <option value="Marriage-Dissolution">Marriage Dissolutions
          </option>   
          
-         <option value="Population-Growth"> Population Growth 
+         <option value="Population-Growth"> Population
          </option> 
 
         

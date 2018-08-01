@@ -1,7 +1,7 @@
 h2,body{text-align: center;
     font-family: 'Ubuntu', sans-serif;}
 
-    form{height: 310px;
+    form{height: 330px;
     width: 535px;
 text-align: center; 
 display: inline-block;
@@ -14,6 +14,9 @@ border: 5px solid black;
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#999999', endColorstr='#ffffff',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */;
     } 
 
-    h4{font-weight:bold; 
-    text-underline-position: auto;}
+    .instructions{font-size: 25px; 
+      width: 500px;
+      font-weight:bold; 
+    text-underline-position: auto;
+  margin: 2px; }
 
