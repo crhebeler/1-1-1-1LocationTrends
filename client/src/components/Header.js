@@ -37,11 +37,10 @@ export default class Header extends React.Component {
    
          <Col>    
         
-         <br/> 
          <h1> Location Trends APP </h1> 
-         <h5>   Helping you find the Data you need !</h5>
-         <br/> 
-         <p> Select your Data Type ,Year and Floirda County Below to Render Results</p> 
+         <h4>   Giving you valuable insights on the current data trends by location</h4>
+         <p> Select your Data Type ,Year and Florida County
+            Below to Render Results</p> 
          
          
       
@@ -57,7 +56,7 @@ export default class Header extends React.Component {
      <Link to='/Charts'>Charts</Link>
      <br/>
      <br/>
-     <Link to='/Zillow'>Interactive Map</Link>
+     <Link to='/Map'>Interactive Map</Link>
      <br/>
      <br/> 
       <Link to='/Team'>Meet the Team </Link>  </Col> 

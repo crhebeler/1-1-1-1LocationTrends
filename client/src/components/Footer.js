@@ -21,7 +21,7 @@ const Footer = (props) => {
 
     <Card>
        
-        <CardFooter style={footStyle} className="text-muted">Location Trends App  &copy; 2018  </CardFooter>
+        <CardFooter style={footStyle} className="text-muted">Location Trends App  &copy; 2018 <br/> <p>Data from the Florida Department of Health</p>  </CardFooter>
       </Card>
  
    </footer> 

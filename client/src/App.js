@@ -3,7 +3,7 @@ import { BrowserRouter as Router, Route } from 'react-router-dom';
 
 import Home from './components/Home'; 
 import './index.css';
-import Zillow from "./components/Zillow"; 
+import Map from "./components/Map"; 
 import Charts from "./components/Charts"; 
 import Team from "./components/Team";
 
@@ -16,7 +16,7 @@ class App extends Component {
         <div>
           <Route exact path="/" component={Home} />
           <Route path="/Charts" component={Charts} />
-          <Route path="/Zillow" component={Zillow} />
+          <Route path="/Map" component={Map} />
           <Route path="/Team" component={Team} />
          
           

@@ -1,14 +1,14 @@
 import React from 'react';
-import ZillowHead from './ZillowHead';
+import MapHead from './MapHead';
 import NavLink from './Navlink';
 import Footer from './Footer';
 import Iframe from 'react-iframe'; 
 
-const Zillow = (props) => {
+const Map = (props) => {
   return (
     <div>
    <NavLink /> 
-<ZillowHead /> 
+<MapHead /> 
 
 
 <Iframe url="https://www.arcgis.com/home/webmap/viewer.html?webmap=80aba8feca084c8c80ca93aa25bd8966"
@@ -32,4 +32,4 @@ const Zillow = (props) => {
   );
 };
 
-export default Zillow;
+export default Map;

@@ -9,7 +9,7 @@ import '../styles/Header.css';
 
 
 
-const ZillowHead = (props) => {
+const MapHead = (props) => {
   return (
     <div>
       
@@ -27,4 +27,4 @@ const ZillowHead = (props) => {
 
 
 
-export default ZillowHead;
+export default MapHead;
