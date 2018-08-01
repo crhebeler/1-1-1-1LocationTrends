@@ -15,6 +15,13 @@ const Craig = {
 };
 
 
+const teamStyle = {
+  height:'400px'
+
+};
+
+
+
 const Team = (props) => {
   return (
 
@@ -27,7 +34,7 @@ const Team = (props) => {
 
       <br/> 
 
-              <Container>
+              <Container style={teamStyle}>
       
         <Row>
           <Col></Col>
@@ -38,8 +45,10 @@ const Team = (props) => {
 
           <Row>
           <Col></Col>
-          <Col> <h3> Craig  <br/> Brooks </h3> </Col>
-          <Col> <h3> Christopher <br/> Hebeler </h3>  </Col>
+          <Col> <h3> Craig  <br/> Brooks </h3>
+          <h5> Email cwbrooks2003@yahoo.com </h5> </Col>
+          <Col> <h3> Christopher <br/> Hebeler</h3>
+          <h5>Email crhebeler@gmail.com </h5>  </Col>
           <Col></Col>
           <br/> 
         <br/> 

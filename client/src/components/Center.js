@@ -87,51 +87,58 @@ class Center extends React.Component {
   render() {
     return (   
       <div>
-    
+        
         <form className="Form" onSubmit={this.handleSubmit.bind(this)}>
+  
+        <h4> Select your Data Type ,Year<br/> and Florida County
+           <br/> <u>Below to Render Results</u> </h4>
           <label>
-            <br/> 
             <ParentDropdownYear year={this.state.year} onChange={this.changeYear} changeYear={this.changeYear.bind(this)} /> 
           </label>
           <label>
-            <br/> 
+           
             <ParentDropdownData  data={this.state.data} onChange={this.changeData} changeData={this.changeData.bind(this)} />
           </label>
           <label>
             <ChildDropdown name={this.state.name} onChange={this.changeName}  /> 
           </label>
-          <br/>
+       
           <br/> 
           <input   type="submit" value="Submit" />
         </form> 
-        <table>
-          <thead>
-            <tr> {/* Dynamic created here */}
-              <td></td> {/* County*/}
-              <td></td>{/*2008*/}
-              <td></td>{/*2009*/}
-              <td></td>{/*2010*/}
-              <td></td>{/*2011*/}
-              <td></td>{/*2012*/}
-              <td></td>{/*2013*/}
-              <td></td>{/*2014*/}
-              <td></td>{/*2015*/}
-              <td></td>{/*2016*/}
-              <td></td>{/*2017*/}
-              <td></td>{/*2018*/}
-            </tr>  
-          </thead>
-          <div className="DataCenter" > 
-          <tbody >                            {/*JSon to stringy to make the key unqie NO DUPLICATE KEYS*/}
+        <div> 
+         <div className="ResultsDiv"> 
+           <div className="ResultsDiv">  {/* Dynamic created here */}
+           
+              <div className="ResultsDiv"> 
+              <div>{/*County*/}</div>
+              <div>{/*2009*/}</div>
+              <div>{/*2010*/}</div>
+              <div>{/*2011*/}</div>
+              <div>{/*2012*/}</div>
+              <div>{/*2013*/}</div>
+              <div>{/*2014*/}</div>
+              <div>{/*2015*/}</div>
+              <div>{/*2016*/}</div>
+              <div>{/*2017*/}</div>
+              <div>{/*2018*/}</div>
+            </div>
+          </div>
+          </div> 
+          </div> 
+
+
+
+         <div>                       {/*JSon to stringy to make the key unqie NO DUPLICATE KEYS*/}
             {this.state.dataRequest ? this.state.dataRequest.map( data => <DataRequest key={JSON.stringify(data)} data={data}/>) : null } 
-          </tbody>
-          </div>  
-        </table> {/* end of dynamic table */}
+         <div/> 
+      
+      </div> {/* end of dynamic table */}
       </div> 
 );
 
 
-   //<ChildDropdownYear year={this.state.name} onChangeYear={this.changeYear} /> 
+  
   }
 }
 

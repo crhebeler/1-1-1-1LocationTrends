@@ -12,6 +12,9 @@ module.exports = {
     var countyObj = {"County": county}
     var yearObj = {[year]: 1, "County": 1}
 
+    var countyDis = {"County of  Dissolution": county}
+    var yearDis = {[year]: 1, "County of  Dissolution": 1}
+
     console.log("year obj", yearObj)
   
     if(req.query.data.toLowerCase()==="births")  { 
@@ -21,40 +24,40 @@ module.exports = {
         .then(dbModel => res.json(dbModel))
         .catch(err => res.status(422).json(err)); ///422 U
 
-
-
     } else if (req.query.data.toLowerCase()==="deaths")  { 
+        console.log("county Obj", countyObj)
+        console.log("year Obj", yearObj)
        db.Deaths
-         .find({})
+         .find(countyObj, yearObj)
          .then(dbModel => res.json(dbModel))
          .catch(err => res.status(422).json(err)); ///422 
          
     } else if (req.query.data.toLowerCase()==="marriages") {
        db.Marriages
-         .find({})
+         .find(countyObj, yearObj)
          .then(dbModel => res.json(dbModel))
          .catch(err => res.status(422).json(err)); ////422
 
     }  else if (req.query.data.toLowerCase()==="marriage-dissolution")   {
         db.Divorce
-        .find({})
+        .find(countyDis, yearDis)
         .then(dbModel => res.json(dbModel))
         .catch(err => res.status(422).json(err));
     
     }  else if (req.query.data.toLowerCase()==="school-grades") {
         db.FloridaSchoolGrade
-        .find({})
+        .find(countyObj, yearObj)
         .then(dbModel => res.json(dbModel))
         .catch(err => res.status(422).json(err));
 
     }  else if ( req.query.data.toLowerCase()==="population-growth") {
         db.PopulationProjection
-        .find({})
+        .find(countyObj, yearObj)
         .then(dbModel => res.json(dbModel))
         .catch(err => res.status(422).json(err)); ///422
 
         } else {
-        res.status(404).json({response:"Hello"}); 
+        res.status(404).json({response:"Api Controllers"}); 
     }
   }, 
 }; 

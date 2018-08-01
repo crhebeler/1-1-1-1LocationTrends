@@ -1,8 +1,8 @@
 h2,body{text-align: center;
     font-family: 'Ubuntu', sans-serif;}
 
-    form{height: 270px;
-    width: 500px;
+    form{height: 310px;
+    width: 535px;
 text-align: center; 
 display: inline-block;
 margin: 30px;
@@ -13,4 +13,7 @@ border: 5px solid black;
   background: linear-gradient(135deg, rgba(153,153,153,1) 0%,rgba(255,255,255,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#999999', endColorstr='#ffffff',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */;
     } 
+
+    h4{font-weight:bold; 
+    text-underline-position: auto;}
 
