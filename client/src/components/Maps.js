@@ -3,15 +3,15 @@ import MapHead from './MapHead';
 import NavLink from './Navlink';
 import Footer from './Footer';
 import Iframe from 'react-iframe'; 
-
+import {Section} from 'reactstrap'; 
 const Maps = (props) => {
   return (
     <div>
+
    <NavLink /> 
 <MapHead /> 
-
-
-<Iframe url="https://www.arcgis.com/home/webmap/viewer.html?webmap=80aba8feca084c8c80ca93aa25bd8966"
+ 
+<Iframe className="iframe" url="https://www.arcgis.com/home/webmap/viewer.html?webmap=80aba8feca084c8c80ca93aa25bd8966"
         width="850px"
         height="650px"
         id="myId"
@@ -22,13 +22,10 @@ const Maps = (props) => {
 
 
 
-
 <Footer /> 
   
-  
 
-
-    </div>
+ </div>
   );
 };
 

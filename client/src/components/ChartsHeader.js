@@ -1,36 +1,34 @@
-import React from 'react';
-import { Jumbotron, Container } from 'reactstrap';
+import React from 'react'; 
 
-// All CSS files will be styled the same ! 
-import '../styles/Header.css';
+import {Jumbotron} from 'reactstrap'; 
+import '../styles/Charts.css';  
 
-
-
+import '../styles/Team.css';
 
 
 
 const ChartsHeader = (props) => {
-  return (
-    <div>
-      <Jumbotron fluid>
+    return (
 
-        <Container fluid>
-
-          <h1 className="display-3">Charts (see the data in action)</h1>
-
-          <p className="lead">Helping you find the Data you need !</p>
-          
-         
-    <div/> 
+   
+   
     
+   <Jumbotron> 
 
+        
+      
+     
+<h1 className="display-3" margin-top="40px">Charts</h1>
+<h4 className="lead"> Dynamic Data rendered through Chart.JS</h4>
+<p> More Chart options coming soon! </p> 
 
-        </Container>
+</Jumbotron>
+  
+  
+        
 
-      </Jumbotron>
-
-    </div>
-  );
-};
-
-export default ChartsHeader;
+    );
+  };
+  
+  export default ChartsHeader;
+  

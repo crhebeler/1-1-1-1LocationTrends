@@ -1,48 +1,37 @@
 {
-  "name": "locationtrendsapp",
+  "name": "locationtrends",
   "version": "1.0.0",
-  "description": "Mern Stack Location Trends app",
-  "main": "server.js",
-  "dependencies": {
-    "chart.js": "^2.7.2",
-    "express": "^4.16.3",
-    "lodash": "^4.17.10",
-    "logger": "^0.0.1",
-    "mongodb": "^3.1.1",
-    "mongojs": "^2.6.0",
-    "mongoose": "^5.2.6",
-    "morgan": "^1.9.0",
-    "react": "^0.14.9",
-    "react-chartjs-2": "^2.7.4",
-    "react-dom": "^0.14.9",
-    "react-router": "^4.3.1",
-    "react-router-dom": "^4.3.1",
-    "react-scripts": "^1.1.4",
-    "webpack": "^2.7.0",
-    "yarn": "^1.9.2"
+  "description": "Location Trends",
+  "license": "MIT",
+  "private": true,
+  "engines": {
+    "node": ">=6"
   },
-  "devDependencies": {},
   "scripts": {
     "client-install": "npm install --prefix client",
     "start": "node server.js",
     "server": "nodemon server.js",
+    "seed:births": "node ./scripts/seeders/Births-by-co",
+    "seed:deaths": "node ./scripts/seeders/Deaths-by-co",
+    "seed:grade": "node ./scripts/seeders/FloridaSchoolGrade",
+    "seed:marriages": "node ./scripts/seeders/Marriage-Dissolution",
+    "seed:marriagesco": "node ./scripts/seeders/Marriages-by-co",
+    "seed:population": "node ./scripts/seeders/Population-and-Projection",
+    "seed:all": "npm run seed:births | npm run seed:deaths | npm run seed:grade | npm run seed:marriages | npm run seed:marriagesco | npm run seed:population",
     "client": "npm start --prefix client",
     "dev": "concurrently \"npm run server\" \"npm run client\"",
     "build": "cd client && npm install && npm run build",
     "heroku-postbuild": "npm run build"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/crhebeler/LocationTrendsAPP.git"
+  "dependencies": {
+    "express": "^4.16.3",
+    "lodash": "^4.17.10",
+    "logger": "0.0.1",
+    "mongoose": "^5.0.11",
+    "morgan": "^1.9.0",
+    "nodemon": "^1.17.2"
   },
-  "keywords": [
-    "Mern",
-    "Stack"
-  ],
-  "author": "Christopher Hebeler",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/crhebeler/LocationTrendsAPP/issues"
-  },
-  "homepage": "https://github.com/crhebeler/LocationTrendsAPP#readme"
+  "devDependencies": {
+    "concurrently": "3.6.1"
+  }
 }

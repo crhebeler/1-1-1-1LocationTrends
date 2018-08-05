@@ -2,7 +2,7 @@
 
 module.exports = {
     Birth: require("./birth"),
-    FloridaSchoolGrade: require("./floridaSchoolGrade"),
+    FloridaSchoolGrade: require("./FloridaSchoolGrade"),
     Deaths: require("./deaths"),
     Divorce: require("./divorce"),
     Marriages: require("./marriages"),

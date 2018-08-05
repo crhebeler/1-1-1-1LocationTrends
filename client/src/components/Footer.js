@@ -1,6 +1,6 @@
 import React from 'react';
 import '../styles/Footer.css';
-import { Card,CardFooter} from 'reactstrap';
+import { Card,CardFooter,Section} from 'reactstrap';
 
 
 
@@ -15,16 +15,17 @@ color: 'black'
 const Footer = (props) => {
   return (
 
-<footer> 
+<div> 
 
     
 
-    <Card>
+    <Card className="footdiv">
        
-        <CardFooter style={footStyle} className="text-muted"><h5>Location Trends App  &copy; 2018</h5> <br/> <p> <em>Used Data from Florida Department of Health</em> </p>  </CardFooter>
+        <CardFooter style={footStyle} className="text-muted"><h5>Location Trends App  &copy; 2018</h5> 
+         <p> <em>Used Data from Florida Department of Health</em> </p>  </CardFooter>
       </Card>
  
-   </footer> 
+   </div> 
   );
 };
 
