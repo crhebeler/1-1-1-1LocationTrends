@@ -1,12 +1,12 @@
 // import React from 'react';
 import NavLink from './Navlink';
 import Footer from './Footer';
-import ChartsHeader from './ChartsHeader'; 
-import {Bar, Line, Pie} from 'react-chartjs-2';
+import "../styles/Charts.css";
+import { Line} from 'react-chartjs-2';
 import React, {Component} from 'react';
 import { Card } from 'reactstrap';
 import axios from 'axios'; 
-
+import ChartsHeader from './ChartsHeader'; 
 
 const styleContain = {
   backgroundColor:'white',
@@ -15,8 +15,6 @@ const styleContain = {
 
 };
 
-const div ={  width: '70%', 
-height:'60%',}
 
  class Charts extends Component{ 
    
@@ -91,12 +89,13 @@ height:'60%',}
 
 
 
-
       <div className="charts">
       <NavLink /> 
-      <Card style={styleContain} > 
-       {/* <ChartsHeader />  */}
-       <div style={div}> 
+      
+      
+        <ChartsHeader /> 
+      <Card className="chartsstyle" style={styleContain} > 
+       <div > 
        <Line
           data={this.state.chartData}
           options={{

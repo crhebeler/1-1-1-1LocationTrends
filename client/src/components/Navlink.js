@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom'
 import '../styles/Navbar.css';
 // ReactStrap Imports 
 import {
+  Container,
   Collapse,
   Navbar,
   NavbarToggler,
@@ -13,7 +14,8 @@ import {
   UncontrolledDropdown,
   DropdownToggle,
   DropdownMenu,
-  DropdownItem } from 'reactstrap';
+  DropdownItem,
+Dropdown } from 'reactstrap';
 
 
 
@@ -28,75 +30,73 @@ const NavStyleInline = {  height:'90px'
 
 
 
-
-  export default class NavLinker extends React.Component {
+export default class Example extends React.Component {
   constructor(props) {
     super(props);
 
-    this.toggle = this.toggle.bind(this);
+    this.toggleNavbar = this.toggleNavbar.bind(this);
     this.state = {
-      isOpen: false
+      collapsed: true
     };
   }
-  toggle() {
+
+  toggleNavbar() {
     this.setState({
-      isOpen: !this.state.isOpen
+      collapsed: !this.state.collapsed
     });
   }
   render() {
     return (
-      <div>
-        <Navbar style={NavStyleInline} color="#FF8B00;"  light expand="md">
+<section> 
 
-          <NavbarBrand className="logo" color="white;" href="/"><h1> Location Trends APP</h1></NavbarBrand>
-          <NavbarToggler onClick={this.toggle} />
-          <Collapse isOpen={this.state.isOpen} navbar>
-            <Nav className="ml-auto" navbar>
-              <NavItem color="#FF8B00;" >
+
+ <div className="hideonmobile"> 
+        <Nav right>
+        <NavbarBrand href="/" className="mr-auto"><h1>Location Trends App</h1></NavbarBrand>
+          <NavItem>
+          <NavLink color="#black;" to='/Home'>  <Link to='/'><h4>Home</h4></Link></NavLink>
+          </NavItem>
+          <NavItem>
+          <NavLink to='/Charts'>  <Link to='/Charts'><h4>Charts</h4></Link></NavLink>
+          </NavItem>
+          <NavItem>
+          <NavLink to='Maps'>  <Link to='/Maps'><h4>Interactive Map</h4></Link></NavLink>
+          </NavItem>
+          <NavItem>
+          <NavLink to='Team'>  <Link to='/Team'><h4>Meet the Team</h4></Link></NavLink>
+          </NavItem>
+        </Nav>
+</div> 
+        <Navbar color="faded" light>
+         
+          <NavbarToggler onClick={this.toggleNavbar} className="mr-2" />
+          <h2> Welcome </h2>
+          <Collapse isOpen={!this.state.collapsed} navbar>
+         
+            <Nav navbar>
+              <NavItem>
               <NavLink color="#black;" to='/Home'>  <Link to='/'><h4>Home</h4></Link></NavLink>
               </NavItem>
-              
               <NavItem>
-                <NavLink to='/Charts'>  <Link to='/Charts'><h4>Charts</h4></Link></NavLink>
+              <NavLink to='/Charts'>  <Link to='/Charts'><h4>Charts</h4></Link></NavLink>
               </NavItem>
-
               <NavItem>
-                <NavLink to='Maps'>  <Link to='/Maps'><h4>Interactive Map</h4></Link></NavLink>
+              <NavLink to='Maps'>  <Link to='/Maps'><h4>Interactive Map</h4></Link></NavLink>
               </NavItem>
-
-                 <NavItem>
-                <NavLink to='Team'>  <Link to='/Team'><h4>Meet the Team</h4></Link></NavLink>
+              <NavItem>
+              <NavLink to='Team'>  <Link to='/Team'><h4>Meet the Team</h4></Link></NavLink>
               </NavItem>
-              <UncontrolledDropdown nav inNavbar>
-                <DropdownToggle nav caret>
-             
-                </DropdownToggle>
-                <DropdownMenu right>
-                  <DropdownItem>
-                  <Link to='/'>Home</Link>
-                  </DropdownItem>
-                  <DropdownItem>
-                  <Link to='/Charts'>Charts</Link>
-                  </DropdownItem>
-                
-                  <DropdownItem>
-                  <Link to='/Maps'>Interactive Map</Link>
-                  </DropdownItem>
-
-                    <DropdownItem>
-                  <Link to='/Team'>Meet the Team</Link>
-                  </DropdownItem>
-                </DropdownMenu>
-              </UncontrolledDropdown>
             </Nav>
           </Collapse>
+          
+         
         </Navbar>
-      </div>
+      
+      </section> 
     );
   }
 }
 
- 
 
 
 

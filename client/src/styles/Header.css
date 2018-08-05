@@ -1,19 +1,45 @@
 
 
-.container {/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#999999+0,ffffff+100 */
+.jumbotron {/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#999999+0,ffffff+100 */
   background: rgb(153,153,153); /* Old browsers */
   background: -moz-linear-gradient(-45deg, rgba(153,153,153,1) 0%, rgba(255,255,255,1) 100%); /* FF3.6-15 */
   background: -webkit-linear-gradient(-45deg, rgba(153,153,153,1) 0%,rgba(255,255,255,1) 100%); /* Chrome10-25,Safari5.1-6 */
   background: linear-gradient(135deg, rgba(153,153,153,1) 0%,rgba(255,255,255,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#999999', endColorstr='#ffffff',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */;
-    height: 275px;
-    border: 5px solid black;
-}
-.map{ background-color: white; 
-  height: 220px;
-    width: 220px;
-    padding:3px;
-    margin-top: 25px; } 
+    height: 185px;
+    border: 5px solid black;}
+    .jumbotron h1 {
+      position: relative;
+      display: block;
+      font-weight: bold;
+      font-size: 30px;
+      color:black;
+      padding-left: 40px;
+  }
+  .jumbotron p {
+      position: absolute;
+      display: block;
+      color: black;
+      font-size: 20px;
+      padding-left:40px;
+  }
 
-    h1{font-size: 50px;}
-    
+.map{ background-color: white; 
+  margin-top: 100px; 
+  float: left;
+height: 300px;
+width: 300px; } 
+
+
+    @media (min-width: 320px) and (max-width: 480px) {
+      .map { padding: 20px;
+        margin-top: 40px;  
+        
+    } 
+
+    .jumbotron {   height: 600px;
+      font-size: 20px;
+      }
+      h1 {font-size: 20px;
+    }
+  }
