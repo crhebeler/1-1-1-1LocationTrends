@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { DataBase } from './ChildDropdownData';
+import { DataBase } from '../Dropdowns-Children/ChildDropdownData';
 
 export class ParentDropdownData extends React.Component {
   constructor(props) {

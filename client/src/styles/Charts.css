@@ -1,0 +1,13 @@
+p{text-align: center;}
+
+.jumbotron{ height: 230px;}
+
+footer{margin: 40px;}
+
+@media (min-width: 320px) and (max-width: 499px) {
+    .chartjs-render-monitor{height:330px;
+        width:330px;
+    margin-bottom: 60px;}
+   .jumbotron{ height: 340px;}
+      
+  } 
