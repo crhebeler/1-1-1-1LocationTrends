@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { DataYear } from './ChildDropdownYear';
+import { DataYear } from '../Dropdowns-Children/ChildDropdownYear';
 
 export class ParentDropdownYear extends React.Component {
   constructor(props) {

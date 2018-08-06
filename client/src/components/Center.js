@@ -1,7 +1,7 @@
 import React from "react";
-import { ChildDropdown } from "./ChildDropdown";
-import { ParentDropdownData } from "./ParentDropdownData";
-import { ParentDropdownYear } from "./ParentDropdownYear";
+import { ChildDropdown } from './Dropdowns-Children/ChildDropdown.js'
+import { ParentDropdownData } from "./Dropdowns-Parents/ParentDropdownData";
+import { ParentDropdownYear } from "./Dropdowns-Parents//ParentDropdownYear";
 import { DataRequest } from "./DataRequest";
 import "../styles/Center.css";
 import axios from "axios";
@@ -95,7 +95,7 @@ class Center extends React.Component {
       <div>
         <Form className="Form" onSubmit={this.handleSubmit.bind(this)}>
           <div className="instructions">
-            Select your Data Type ,Year<br /> and Florida County
+            Select your <br/>Data Type ,Year<br /> and Florida County
             <br /> Below to Render Results
           </div>
           <br/>
@@ -116,8 +116,8 @@ class Center extends React.Component {
           <label>
             <ChildDropdown name={this.state.name} onChange={this.changeName} />
           </label>
-
-          <br />
+          <br /> 
+          <br/>
           <input type="submit" value="Submit" />
         </Form>
         <div>
@@ -146,10 +146,8 @@ class Center extends React.Component {
           {/*JSon to stringy to make the key unqie NO DUPLICATE KEYS*/}
           {this.state.dataRequest
             ? this.state.dataRequest.map(data => (
-                <DataRequest key={JSON.stringify(data)} data={data} />
-              ))
-            : null}
-          <div />
+                <DataRequest className="Box" key={JSON.stringify(data)} data={data} />)): null} 
+                <div />                                   
         </div>{" "}
         {/* end of dynamic table */}
       </div>

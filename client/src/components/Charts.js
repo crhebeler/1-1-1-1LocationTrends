@@ -9,8 +9,7 @@ import axios from 'axios';
 import ChartsHeader from './ChartsHeader'; 
 
 const styleContain = {
-  backgroundColor:'white',
-  margin: '30px',
+  backgroundColor:'white'
  
 
 };
@@ -94,9 +93,9 @@ const styleContain = {
       
       
         <ChartsHeader /> 
-      <Card className="chartsstyle" style={styleContain} > 
-       <div > 
-       <Line
+      <Card  style={styleContain} > 
+       <div className="chartsstyle" > 
+       <Line className="chartsstyle"
           data={this.state.chartData}
           options={{
             title:{

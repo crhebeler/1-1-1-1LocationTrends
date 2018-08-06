@@ -1,15 +1,10 @@
 import React from 'react';
-import Florida from '../styles/florida.png' 
+import Florida from '../Images/florida.png' 
 import '../styles/Header.css';
 import {Container ,Jumbotron,  Row, Col } from 'reactstrap';
-import { Link } from 'react-router-dom'
+import { Link } from 'react-router-dom'; 
+import FloridaOrangeMap from '../Images/florida.png';
 
-
-
-const map = {
-  title: 'Florida Map Orange',
-  src: 'https://github.com/crhebeler/LocationTrendsAPP/blob/master/client/florida.png?raw=true' 
-};
 
 
 
@@ -31,10 +26,10 @@ export default class Header extends React.Component {
         
       
      
-         <h1 className="display-3" margin-top="40px">Location Trends APP</h1>
+         <h1 className="display-3">Location Trends APP</h1>
        
         <h4 className="lead">    Giving you valuable insights on the current data trends by location</h4>
-        <img className="map" src={map.src} alt={map.title} />
+        <img className="map" src={FloridaOrangeMap} alt="Florida Orange Map" />
       </Jumbotron>
      
 

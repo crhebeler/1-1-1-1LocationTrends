@@ -2,27 +2,13 @@ import React from 'react';
 import NavLink from './Navlink';
 import Footer from './Footer'; 
 import '../styles/Team.css';
+
+import Christopher from '../Images/chris.jpg'; 
+import Craig from '../Images/craig.png';
 import { Container, Row, Col } from 'reactstrap';
 import TeamHeader from './TeamHeader'; 
 
 
-
-
-const Chris = {
-  title: 'Chris',
-  src: 'https://github.com/crhebeler/LocationTrendsAPP/blob/master/client/src/chris.jpg?raw=true' 
-};
-
-const Craig = {
-  title: 'Craig',
-  src: 'https://github.com/crhebeler/LocationTrendsAPP/blob/master/client/src/craigplaceholdeer.png?raw=true' 
-};
-
-
-const teamStyle = {
-  height:'400px'
-
-};
 
 
 
@@ -36,10 +22,10 @@ const Team = (props) => {
               <Container>
         <Row>
      
-          <Col><img className="chris" src={Chris.src} alt={Chris.title}  />
+          <Col><img className="chris" src={Christopher} alt="Christopher"  />
           <h3> Christopher  Hebeler</h3>
           <h5>Email crhebeler@gmail.com </h5> </Col>
-          <Col><img className="craig" src={Craig.src} alt={Craig.title}  />
+          <Col><img className="craig" src={Craig} alt="Craig"  />
           <h3> Craig  Brooks </h3><h5> Email cwbrooks2003@yahoo.com </h5></Col>
      
         </Row>
