@@ -20,30 +20,31 @@
    <img src="\Screenshots\Desktop3.png" height="800" width="825"  alt="accessibility text">
 
 <h3> Mobile Version </h3>
+<br> 
+  <img src="https://github.com/crhebeler/LocationTrendsAPP/blob/master/Screenshots/1.png?raw=true" height="432" width="703" title="hover text">
+<br> 
+  <img src="https://github.com/crhebeler/LocationTrendsAPP/blob/master/Screenshots/2.png?raw=true" height="432" width="703" alt="accessibility text">
+<br> 
 
-  <img src="https://github.com/crhebeler/LocationTrendsAPP/blob/master/Screenshots/1.png?raw=true" height="250" width="250" title="hover text">
-
-  <img src="https://github.com/crhebeler/LocationTrendsAPP/blob/master/Screenshots/2.png?raw=true" height="250" width="250" alt="accessibility text">
-
-   <img src="\Screenshots\3.png" height="400" width="375" title="hover text">
-
-  <img src="\Screenshots\4.png" height="400" width="375" alt="accessibility text">
-
-   <img src="\Screenshots\5.png" height="400" width="375" title="hover text">
-
-  <img src="\Screenshots\6.png" height="400" width="375" alt="accessibility text">
-
-   <img src="\Screenshots\7.png" height="400" width="375" title="hover text">
-
-  <img src="\Screenshots\8.png" height="400" width="375" alt="accessibility text">
-
-   <img src="\Screenshots\9.png" height="400" width="375" title="hover text">
-
-  <img src="\Screenshots\10.png" height="400" width="375" alt="accessibility text">
-
-   <img src="\Screenshots\11.png" height="400" width="375" title="hover text">
-
-  <img src="\Screenshots\2.png" height="400" width="375" alt="accessibility text">
+   <img src="\Screenshots\3.png" height="432" width="703" title="hover text">
+<br> 
+  <img src="\Screenshots\4.png" height="432" width="703" alt="accessibility text">
+<br> 
+   <img src="\Screenshots\5.png" height="432" width="703" title="hover text">
+<br> 
+  <img src="\Screenshots\6.png" height="432" width="703" alt="accessibility text">
+<br> 
+   <img src="\Screenshots\7.png" height="432" width="703" title="hover text">
+<br> 
+  <img src="\Screenshots\8.png" height="432" width="703" alt="accessibility text">
+<br> 
+   <img src="\Screenshots\9.png" height="432" width="703" title="hover text">
+<br> 
+  <img src="\Screenshots\10.png" height="432" width="703" alt="accessibility text">
+<br> 
+   <img src="\Screenshots\11.png" height="432" width="703" title="hover text">
+<br> 
+  <img src="\Screenshots\2.png" height="432" width="703" alt="accessibility text">
 
 
 
