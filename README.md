@@ -1,9 +1,17 @@
 
 <html>
 
-<h2>Location Trends App<h2/>
 
-<h3> M.E.R.N Stack </h3>
+<style>
+html{text-align:center;}
+
+</style>
+
+
+
+<h1>Location Trends App<h1/>
+
+<h2> M.E.R.N Stack </h2>
 
 <h3>MongoDB ,Express, React.JS, Node.js</h3>
 
@@ -13,11 +21,11 @@
 
 <h3> Desktop </h3> 
 
- <img src="\Screenshots\Desktop1.jpg" height="800" width="825" alt="accessibility text">
+ <img src="\Screenshots\Desktop1.jpg" height="532" width="838" alt="accessibility text">
 
-  <img src="\Screenshots\Desktop2.png" height="800" width="825"  alt="accessibility text">
+  <img src="\Screenshots\Desktop2.png" height="532" width="838"  alt="accessibility text">
 
-   <img src="\Screenshots\Desktop3.png" height="800" width="825"  alt="accessibility text">
+   <img src="\Screenshots\Desktop3.png" height="532" width="838"  alt="accessibility text">
 
 <h3> Mobile Version </h3>
 <br> 
