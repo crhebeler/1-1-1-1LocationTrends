@@ -23,12 +23,12 @@ export default class Header extends React.Component {
 
    <Jumbotron> 
 
-        
-      
-     
+     <div className="JumboTextHeader"> 
          <h1 className="display-3">Location Trends APP</h1>
        
         <h4 className="lead">    Giving you valuable insights on the current data trends by location</h4>
+        </div> 
+      
         <img className="map" src={FloridaOrangeMap} alt="Florida Orange Map" />
       </Jumbotron>
      

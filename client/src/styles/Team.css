@@ -32,7 +32,9 @@ border: 5px solid black;}
                 margin-bottom: 300px; 
               
           } .foot{margin-top: 700px; }
+          
       
-          .jumbotron {   height: 200px;
+          .jumbotron {   height: 360px;
+            width: 360px;
             font-size: 20px;
             }} 
