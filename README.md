@@ -12,11 +12,12 @@
 <a href="https://location-trend-app.herokuapp.com/">Click Here to View on Herokuapp</a>
 
 <h3> Desktop </h3> 
- <img src="\Screenshots\Desktop1.png" height="450" width="450" alt="accessibility text">
 
-  <img src="\Screenshots\Desktop2.png" height="450" width="450" alt="accessibility text">
+ <img src="\Screenshots\Desktop1.jpg" height="600" width="650" alt="accessibility text">
 
-   <img src="\Screenshots\Desktop3.png" height="450" width="450" alt="accessibility text">
+  <img src="\Screenshots\Desktop2.png" height="600" width="650" alt="accessibility text">
+
+   <img src="\Screenshots\Desktop3.png" height="600" width="650" alt="accessibility text">
 
 <h3> Mobile Version </h3>
 
@@ -44,7 +45,7 @@
 
   <img src="\Screenshots\2.png" height="250" width="250"" alt="accessibility text">
 
-</p>
+
 
 
 </html>
