@@ -1,9 +1,14 @@
+
+h4{font-size: 30px;}
+
 .Navbar{background: rgb(255,183,107); /* Old browsers */
   background: -moz-linear-gradient(-45deg, rgba(255,183,107,1) 0%, rgba(255,167,61,1) 50%, rgba(255,124,0,1) 51%, rgba(255,127,4,1) 100%); /* FF3.6-15 */
   background: -webkit-linear-gradient(-45deg, rgba(255,183,107,1) 0%,rgba(255,167,61,1) 50%,rgba(255,124,0,1) 51%,rgba(255,127,4,1) 100%); /* Chrome10-25,Safari5.1-6 */
   background: linear-gradient(135deg, rgba(255,183,107,1) 0%,rgba(255,167,61,1) 50%,rgba(255,124,0,1) 51%,rgba(255,127,4,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffb76b', endColorstr='#ff7f04',GradientType=1 );}
-a{color: black;}
+a{color: black;
+margin-top: 30px;}
+.WordRow{margin-top: 40px;}
   .navbar-toggler-icon{color:orange;}
 .navbar-nav > li > .navbar-collapse{ background-color:orange; }
 /* change navbar background */
@@ -27,14 +32,8 @@ a{color: black;}
     border-color:orange;
   }
   /* change navbar background on collapse */
-  @media (max-width: 768px) {
-   h2,p {display: none;
-    }
-  }
-  .collapse {background-color: orange; 
-    color:black; 
-    opacity: 1.0;
-    filter: alpha(opacity=100); } 
+
+
    
 
 html,body{background: rgb(255,183,107); /* Old browsers */
@@ -44,9 +43,9 @@ html,body{background: rgb(255,183,107); /* Old browsers */
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffb76b', endColorstr='#ff7f04',GradientType=1 );}
 
 
-  @media (min-width: 540px) and (max-width: 1800px) {
+  @media (min-width: 540px) and (max-width: 2200px) {
     h2 { display: none;
-    }
+    } 
   }
 
     @media (min-width: 320px) and (max-width: 530px) {

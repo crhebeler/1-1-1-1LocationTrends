@@ -9,8 +9,9 @@ import axios from 'axios';
 import ChartsHeader from './ChartsHeader'; 
 
 const styleContain = {
-  backgroundColor:'white'
+  backgroundColor:'white',
  
+
 
 };
 
@@ -87,35 +88,36 @@ const styleContain = {
     return (
 
 
-
-      <div className="charts">
+      <section> 
       <NavLink /> 
-      
-      
+   
+      <div className="chartsstyle" > 
         <ChartsHeader /> 
       <Card  style={styleContain} > 
-       <div className="chartsstyle" > 
+      
        <Line className="chartsstyle"
           data={this.state.chartData}
           options={{
             title:{
               display:this.props.displayTitle,
               text:'Flagler County Birth Rates',
-              fontSize: 35,
+              fontSize: '55',
+              
               fontStyle:'Anaphora',
             },
             legend:{
               display:this.props.displayLegend,
               position: this.props.legendPosition,
-              maintainAspectRatio: false
+              maintainAspectRatio: true, 
+              responsive: true
             }
 	             }}
 />
-         </div>   
          </Card> 
+         </div>   
             <Footer/>
             
-      </div>
+      </section>
      )
    }
  }

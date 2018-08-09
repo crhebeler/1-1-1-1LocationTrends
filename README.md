@@ -2,24 +2,20 @@
 <html>
 
 
-<style>
-html{text-align:center;}
-
-</style>
 
 
 
-<h1>Location Trends App<h1/>
+<h1 style="text-align:center;">Location Trends App<h1/>
 
-<h2> M.E.R.N Stack </h2>
+<h2 style="text-align:center;" > M.E.R.N Stack </h2>
 
-<h3>MongoDB ,Express, React.JS, Node.js</h3>
+<h3 style="text-align:center;">MongoDB ,Express, React.JS, Node.js</h3>
 
 
 
-<a href="https://location-trend-app.herokuapp.com/">Click Here to View on Herokuapp</a>
+<a style="text-align:center;" href="https://location-trend-app.herokuapp.com/">Click Here to View on Herokuapp</a>
 
-<h3> Desktop </h3> 
+<h3 style="text-align:center;" > Desktop Version </h3> 
 
  <img src="\Screenshots\Desktop1.jpg" height="532" width="838" alt="accessibility text">
 

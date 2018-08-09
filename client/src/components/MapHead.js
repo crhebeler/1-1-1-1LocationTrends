@@ -1,9 +1,8 @@
 import React from 'react';
-
+import {Jumbotron} from 'reactstrap'; 
 // All Headers will be styled the same in this CSS file
+import "../styles/Maps.css"; 
 
-
-import '../styles/Header.css';
 
 
 
@@ -13,13 +12,17 @@ const MapHead = (props) => {
   return (
     <div>
       
-
-          <h1> Florida Interactive County Map </h1>
+  
+      <Jumbotron className="JumboHead"> 
 
         
-          <p>  Expore the Florida couties by using the interactive map </p> 
+      
+     
+<h1 className="display-3" margin-top="40px">ArcGIS Interactive Map</h1>
+<h4 className="lead"> Explore Florida through Visuals Below</h4>
 
-
+</Jumbotron>
+  
 
 
     </div> );} 
