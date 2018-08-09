@@ -1,6 +1,6 @@
 
 <html>
-<p align="center">
+
 <h2>Location Trends App<h2/>
 
 <h3> M.E.R.N Stack </h3>
@@ -21,9 +21,9 @@
 
 <h3> Mobile Version </h3>
 
-  <img src="\Screenshots\1.png" height="250"" width="250"" title="hover text">
+  <img src="https://github.com/crhebeler/LocationTrendsAPP/blob/master/Screenshots/1.png?raw=true" height="250"" width="250"" title="hover text">
 
-  <img src="\Screenshots\2.png" height="250" width="250"" alt="accessibility text">
+  <img src="https://github.com/crhebeler/LocationTrendsAPP/blob/master/Screenshots/2.png?raw=true" height="250" width="250"" alt="accessibility text">
 
    <img src="\Screenshots\3.png" height="250" width="250"" title="hover text">
 
