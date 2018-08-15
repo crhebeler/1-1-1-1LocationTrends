@@ -1,11 +1,32 @@
-.chris{  height: 220px;
-    width: 200px;
-margin: 20px;
+.chris{  height: 300px;
+    width: 300px;
+    margin-top: 100px; 
 border: 5px solid black;}
 
-    .craig{  height: 220px;
-        width: 200px;
-        margin: 20px;
+    .craig{  height: 300px;
+        width: 300px;
+        margin-top: 100px; 
+        margin-left: 20px; 
+    border: 5px solid black;}
+
+    .tech{ border: 5px solid black;
+        background: rgb(153,153,153); /* Old browsers */
+        background: -moz-linear-gradient(-45deg, rgba(153,153,153,1) 0%, rgba(255,255,255,1) 100%); /* FF3.6-15 */
+        background: -webkit-linear-gradient(-45deg, rgba(153,153,153,1) 0%,rgba(255,255,255,1) 100%); /* Chrome10-25,Safari5.1-6 */
+        background: linear-gradient(135deg, rgba(153,153,153,1) 0%,rgba(255,255,255,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#999999', endColorstr='#ffffff',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */;
+    margin: 40px; }
+
+
+    .teampic{  height: 446px;
+        width: 300px;
+      
+    border: 5px solid black;}
+
+    
+    .Mern{  height: 325px;
+        width: 325px;
+      
     border: 5px solid black;}
 
         html,body{text-align: center;}
@@ -14,7 +35,7 @@ border: 5px solid black;}
         .card{text-align: center;
         }
 
-        .container{height: 350px;}
+       
 
         .Jumbotron{/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#999999+0,ffffff+100 */
             background: rgb(153,153,153); /* Old browsers */
@@ -26,15 +47,21 @@ border: 5px solid black;}
           }
 
 
-          @media (min-width: 320px) and (max-width: 499px) {
-            .container{height: 400px;
-                width: auto;
-                margin-bottom: 300px; 
-              
-          } .foot{margin-top: 700px; }
           
-      
+
+          @media (min-width: ) and (max-width: 499px) {
+            .teamhideondesk{ display: none;}
+        }
+        
+
+
+
+          @media (min-width: 320px) and (max-width: 499px) {
+           
+            .Mern{margin: 25px; }
+            
           .jumbotron {   height: 360px;
             width: 360px;
             font-size: 20px;
-            }} 
+            margin: 10px; 
+            } } 
