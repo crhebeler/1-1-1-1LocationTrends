@@ -5,7 +5,7 @@ import { ParentDropdownYear } from "./Dropdowns-Parents//ParentDropdownYear";
 import { DataRequest } from "./DataRequest";
 import "../styles/Center.css";
 import axios from "axios";
-import {Form, Container} from 'reactstrap'; 
+import {Form, Button} from 'reactstrap'; 
 import _ from "lodash"; //Fix for the nested array probem
 import Responsive from 'react-responsive';/// Adding mobile Responsive
 
@@ -118,7 +118,7 @@ class Center extends React.Component {
           </label>
           <br /> 
           <br/>
-          <input type="submit" value="Submit" />
+          <Button color="primary" value="Submit"> Submit </Button>
         </Form>
         <div>
           <div className="ResultsDiv">

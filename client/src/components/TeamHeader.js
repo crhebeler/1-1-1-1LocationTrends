@@ -19,7 +19,7 @@ const TeamHeader = (props) => {
       
      
 <h1 className="display-3" margin-top="40px">Meet the Team</h1>
-<h4 className="lead"> Giving you valuable insights on the current data trends by location</h4>
+<h4 className="lead"> The Developers of Location Trends APP</h4>
 
 </Jumbotron>
   
@@ -31,3 +31,4 @@ const TeamHeader = (props) => {
   
   export default TeamHeader;
   
+

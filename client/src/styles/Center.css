@@ -33,7 +33,7 @@ border: 5px solid black;
 
 
   
-  @media (min-width: 320px) and (max-width: 499px) {
+  @media (min-width: 320px) and (max-width: 480px) {
      table {
       width:85%;
       height: 330px;
@@ -44,7 +44,7 @@ border: 5px solid black;
   }
   h4 {margin-left:5px;
 }
-.Form {height: 568px;
+.Form {height: 549px;
   width: 300px;
   border: 3px;
 }

@@ -12,8 +12,8 @@ const ChartsHeader = (props) => {
 
    
    
-    
-   <Jumbotron> 
+    <div className="jumbochart"> 
+   <Jumbotron > 
 
         
       
@@ -24,7 +24,7 @@ const ChartsHeader = (props) => {
 
 </Jumbotron>
   
-  
+  </div> 
         
 
     );

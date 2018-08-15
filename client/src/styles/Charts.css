@@ -12,6 +12,7 @@ chartjs-render-monitor{height: 800px;
     .chartjs-render-monitor{height:330px;
         width:330px;
     margin-bottom: 60px;}
-   .jumbotron{ height: 340px;}
+  .jumbochart{ height: 90px;
+margin-bottom: 120px; }
       
   } 
