@@ -1,0 +1,24 @@
+
+    
+
+
+footer{  background: rgb(153,153,153); /* Old browsers */
+    background: -moz-linear-gradient(-45deg, rgba(153,153,153,1) 0%, rgba(255,255,255,1) 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(-45deg, rgba(153,153,153,1) 0%,rgba(255,255,255,1) 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(135deg, rgba(153,153,153,1) 0%,rgba(255,255,255,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#999999', endColorstr='#ffffff',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */;
+    color: black;
+    border: solid 5px black; 
+width: auto; 
+height: 90px; } 
+
+
+
+    
+
+    @media (min-width: 320px) and (max-width: 499px) {
+       footer{height: 111px;
+    width: auto; }
+    } 
+    
+    
