@@ -13,7 +13,7 @@ const MapHead = (props) => {
     <div>
       
   
-      <Jumbotron className="JumboHead"> 
+      <Jumbotron className="map-head"> 
 
         
       
@@ -25,7 +25,10 @@ const MapHead = (props) => {
   
 
 
-    </div> );} 
+    </div>
+     )
+     ;
+    } 
     
 
 

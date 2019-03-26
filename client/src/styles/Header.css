@@ -7,10 +7,9 @@
   background: linear-gradient(135deg, rgba(153,153,153,1) 0%,rgba(255,255,255,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#999999', endColorstr='#ffffff',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */;
   
-    border: 5px solid black;}
-
-.jumbotron{padding: 10px;
-height: 60px;}
+    border: 5px solid black;
+  
+   }
 
     .jumbotron h1 {
       position: relative;
@@ -18,17 +17,17 @@ height: 60px;}
       font-weight: bold;
       font-size: 60px;
       color:black;
-      padding-left: 40px;
+     
   }
   .jumbotron p {
       position: absolute;
       display: block;
       color: black;
-      padding-left:40px;
+      
   }
 
 .map{ background-color: white; 
-  margin-top: 80px;
+  margin-top: 120px;
   padding: 20px;
   border: solid 5px black; 
   float: left;
@@ -43,8 +42,11 @@ width: 400px; }
     margin-left:170px; 
 
  
-    margin-bottom: 20px;
-   } } 
+    margin-bottom: 20px;}
+
+
+    .jumbotron{height: 80%;} 
+   } 
 
 
 

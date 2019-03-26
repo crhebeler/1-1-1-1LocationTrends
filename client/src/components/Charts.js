@@ -10,7 +10,10 @@ import ChartsHeader from './ChartsHeader';
 
 const styleContain = {
   backgroundColor:'white',
- 
+  height:'100%',
+  width:'90%',
+  padding:'5px',
+  margin:'auto'
 
 
 };

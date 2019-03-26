@@ -17,9 +17,12 @@ border: 5px solid black;}
         filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#999999', endColorstr='#ffffff',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */;
     margin: 40px; }
 
-
+.team-picture{background-color: grey;
+padding: 5px;
+margin: 10px;
+border: solid black 5px;}
     .teampic{  height: 446px;
-        width: 300px;
+        width: 300px;   
       
     border: 5px solid black;}
 
@@ -43,15 +46,13 @@ border: 5px solid black;}
             background: -webkit-linear-gradient(-45deg, rgba(153,153,153,1) 0%,rgba(255,255,255,1) 100%); /* Chrome10-25,Safari5.1-6 */
             background: linear-gradient(135deg, rgba(153,153,153,1) 0%,rgba(255,255,255,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
             filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#999999', endColorstr='#ffffff',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */;
-              height: 275px;
+              
           }
 
 
           
 
-          @media (min-width: ) and (max-width: 499px) {
-            .teamhideondesk{ display: none;}
-        }
+      
         
 
 
@@ -60,8 +61,18 @@ border: 5px solid black;}
            
             .Mern{margin: 25px; }
             
-          .jumbotron {   height: 360px;
+          .team-head .jumbotron {   
             width: 360px;
             font-size: 20px;
             margin: 10px; 
             } } 
+
+
+            .chris{  
+                margin:auto;
+            border: 5px solid black;}
+            
+                .craig{  
+                    margin:auto; 
+                border: 5px solid black;}
+            

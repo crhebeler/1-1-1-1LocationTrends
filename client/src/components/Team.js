@@ -2,13 +2,14 @@ import React from 'react';
 import NavLink from './Navlink';
 import Footer from './Footer'; 
 import '../styles/Team.css';
+
 import Christopher from '../Images/chris.jpg'; 
 import Craig from '../Images/craig.png';
 import Mern from '../Images/Mern.png'; 
 import Others from '../Images/others.png'; 
 import Others2 from '../Images/others2.png'; 
 import TeamPic from '../Images/teampic.jpg'; 
-import { Container, Row, Col } from 'reactstrap';
+import { Container, Row, Col,Button } from 'reactstrap';
 import TeamHeader from './TeamHeader'; 
 
 
@@ -25,10 +26,14 @@ const Team = (props) => {
      
           <Col><img className="chris" src={Christopher} alt="Christopher"  />
           <h3> Christopher  Hebeler</h3>
-          <h5>Email crhebeler@gmail.com </h5> </Col>
-          <Col><img className="teampic" src={TeamPic} alt="Team Picture"  /> <h2 className="teamhideondesk"> Team Picture </h2> </Col> 
+          <h5><a href="mailto:crhebeler@gmail.com" ><Button  color="secondary" size="lg">Click Here <br/> Send Me an Email </Button></a></h5> </Col>
+          <Col>
+          
+          
+          <div className="team-picture">
+          <img className="teampic" src={TeamPic} alt="Team Picture"  /> <h2 className="teamhideondesk"> Team Picture </h2> </div></Col> 
           <Col><img className="craig" src={Craig} alt="Craig"  />
-          <h3> Craig  Brooks </h3><h5> Email cwbrooks2003@yahoo.com </h5></Col>
+          <h3> Craig  Brooks </h3><h5> <a href="Email cwbrooks2003@yahoo.com" ><Button  color="secondary" size="lg">Click Here <br/> Send Me an Email </Button></a> </h5></Col>
      
         </Row>
         <div className="tech"> 
